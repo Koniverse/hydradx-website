@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Web3Vietnam/hydradx-website#readme",
   "dependencies": {
     "bootstrap": "^5.0.1",
-    "meblog": "^2.2.1"
+    "meblog": "^2.2.2"
   }
 }
