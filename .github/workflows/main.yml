@@ -54,7 +54,7 @@ jobs:
           
       - uses: EndBug/add-and-commit@v7
         with:
-          add: 'docs'
+          add: '.'
           branch: prod
           default_author: user_info
           message: '[AUTOMATED] New build'
