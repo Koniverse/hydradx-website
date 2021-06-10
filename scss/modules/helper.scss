@@ -1,0 +1,51 @@
+.p-color {
+    color: var(--primray-color);
+}
+
+.p-shadow {
+    text-shadow: 0px 0px 10px rgba($primary-color, 0.81);
+}
+
+.meta-color {
+    color: var(--meta-color);
+}
+
+@media (max-width: $breakpoint) {
+    .center-on-breakpoint {
+        text-align: center;
+    }
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ff-sans {
+    font-family: var(--sans-font);
+}
+
+.ff-sans-hl {
+    font-family: var(--sans-font-hl);
+}
+
+.headline-1 {
+    font-family: var(--sans-font-hl);
+    font-size: 72px;
+}
+
+.headline-2 {
+    font-family: var(--sans-font-hl);
+    font-size: 40px;
+}
+
+.fz-24 {
+    font-size: 24px;
+}
+
+
+
+

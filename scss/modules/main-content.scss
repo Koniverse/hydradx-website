@@ -1,0 +1,112 @@
+body {
+  color: var(--text-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  background-color: var(--bgc);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.7em 0;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.35em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 30px 0;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
+
+pre > code {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  color: var(--code-color);
+  background: var(--code-bgc);
+  line-height: 1.5;
+}
+
+code {
+  background: var(--code-bgc);
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: var(--primray-color);
+}
+
+a.fork-me {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    border: none;
+  }
+}
+
+table.table {
+  border: 2px solid var(--primray-color);
+  box-shadow: 0px 0px 40px rgba(246, 83, 162, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  border-spacing: 0;
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    padding: 0.3em 1em;
+    border-bottom: 1px solid var(--primray-color);
+    border-right: 1px solid var(--primray-color);
+
+    &:first-child {
+      vertical-align: top;
+      padding: 0.7em 1.5em;
+    }
+
+    &:last-child {
+      border-right: none;
+      vertical-align: top;
+    }
+  }
+}

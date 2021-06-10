@@ -1,0 +1,139 @@
+.page-index {
+  .header-background {
+    background-size: contain;
+    background-image: url("./images/header-background.png");
+    background-repeat: no-repeat;
+    display: flow-root;
+    height: 1375px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    //background-position-x: right;
+    //background-position-y: -100px;
+  }
+
+  .section-1 {
+    margin: 6em auto;
+  }
+
+  img.hydradx {
+    max-width: 600px;
+  }
+
+  .headline-1 {
+    color: var(--primray-color);
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 1205px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-1-info-box {
+    max-width: 960px;
+    margin: 4em auto;
+
+    .info-box {
+      margin: 15px;
+    }
+  }
+
+  .headline-2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .section-2-building-with-us {
+    margin-top: 4em;
+    margin-bottom: 10em;
+  }
+
+  .weird-stroke {
+    background-image: url("./images/weird_stroke.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 765px;
+    position: absolute;
+    top: 1110px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .section-2-info-box {
+    margin-top: 8em;
+    margin-bottom: 10em;
+    position: relative;
+
+    p.header {
+      margin-top: 0;
+      color: var(--primray-color);
+      @extend .p-shadow;
+    }
+
+    span.text {
+      font-size: 20px;
+    }
+
+    .row-2 {
+      margin-top: 6em;
+    }
+
+    .box-2 {
+      margin-top: 4em;
+    }
+
+    .box-3 {
+      margin-top: 5em;
+    }
+  }
+
+  .weird-logo-circling {
+    background-image: url("./images/logo-pink-circling.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 912px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .member-of {
+    margin-bottom: 4em;
+  }
+
+  .members {
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 1em 3em;
+    }
+  }
+
+  table.roadmap {
+    margin-bottom: 5em;
+  }
+
+  .about-the-team {
+    max-width: 360px;
+    margin: 0 auto 5em auto;
+    font-size: 16px;
+
+    h2 {
+      margin-bottom: 1.5em;
+    }
+
+    a {
+      white-space: nowrap;
+      display: inline-block;
+      border: 1.5px solid var(--border-color);
+      padding: 0 5px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  border: 2px solid var(--btn-border-color);
+  background-color: var(--bgc);
+  color: var(--primray-color);
+  text-shadow: 0px 0px 10px rgba(246, 83, 162, 0.81);
+  text-transform: uppercase;
+  box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
+  border-radius: 2px;
+  display: inline-block;
+
+  &__xlg {
+    padding: 1em 2.5em;
+    font-size: 40px;
+  }
+
+  &__lg {
+    padding: 0.55em 2.5em;
+    font-size: 24px;
+  }
+
+  &__md {
+  }
+
+  &__sm {
+    border-width: 1.5px;
+    text-transform: capitalize;
+  }
+}

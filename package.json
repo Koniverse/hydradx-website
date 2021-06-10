@@ -1,0 +1,27 @@
+{
+  "name": "hydradx-website",
+  "version": "1.0.0",
+  "description": "HydraDX - Cross-chain liquidity protocol built on Substrate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web3Vietnam/hydradx-website.git"
+  },
+  "keywords": [
+    "hydradx",
+    "meblog"
+  ],
+  "author": "@sinzii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Web3Vietnam/hydradx-website/issues"
+  },
+  "homepage": "https://github.com/Web3Vietnam/hydradx-website#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "meblog": "^2.2.1"
+  }
+}

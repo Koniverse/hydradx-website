@@ -1,0 +1,15 @@
+:root {
+    --primray-color: #{$primary-color};
+    --text-color: #{$text-color};
+    --bgc: #{$bgc};
+    --meta-color: #{$meta-color};
+    --border-color: #{$border-color};
+    --code-color: #{$code-color};
+    --code-bgc: #{$code-bgc};
+    --btn-border-color: #{$btn-border-color};
+
+    --main-font: #{$main-font};
+    --serif-font: #{$serif-font};
+    --sans-font: #{$sans-font};
+    --sans-font-hl: #{$sans-font-hl};
+}

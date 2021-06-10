@@ -1,0 +1,35 @@
+.board-info {
+  //background-color: #0B0D56;
+  background-color: rgba(6, 7, 45, 0.5);
+
+  &__label {
+    border: 2px solid var(--btn-border-color);
+    background-color: var(--bgc);
+    //color: var(--primray-color);
+    //text-shadow: 0px 0px 10px rgba(246, 83, 162, 0.81);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
+    border-radius: 2px;
+
+    font-size: 40px;
+    font-family: var(--sans-font-hl);
+    max-width: 690px;
+    width: 690px;
+    text-align: center;
+    height: 108px;
+    line-height: 108px;
+    font-weight: bold;
+    margin: 0 auto;
+
+    position: relative;
+    top: -54px;
+  }
+
+  &__body {
+    min-height: 100px;
+    text-align: center;
+    padding: 1em 1em 4em 1em;
+    max-width: 1036px;
+    margin: auto;
+  }
+}
