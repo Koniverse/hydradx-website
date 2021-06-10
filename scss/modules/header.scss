@@ -1,5 +1,24 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    align-items: center;
+
+    &__logo {
+        flex: 0 0 20%;
+        text-align: left;
+        img {
+            width: 80px;
+        }
+    }
+
+    &__actions {
+        flex: 0 0 20%;
+        text-align: right;
+    }
+
     &__menu {
+        flex: 1 0 auto;
         font-family: $sans-font;
         margin: 20px 0;
         list-style: none;

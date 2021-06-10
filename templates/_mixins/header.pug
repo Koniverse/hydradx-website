@@ -1,11 +1,15 @@
 mixin header
     header.header
+        a.header__logo(href=url('/'))
+            img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
             li
                 a(href=url('/', locale)) About
             li
-                a(href=url('/writings.html', locale)) Docs
+                a(href=url('/docs.html', locale)) Docs
             li
                 a(href=url('/basilisk.html', locale)) Basilisk
             li
                 a(href=url('/join-hydration.html', locale)) Join Hydration
+        .header__actions
+            a.btn.btn__md.ff-sans-hl(href='#') Launch App
