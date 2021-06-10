@@ -5,7 +5,7 @@
     align-items: center;
 
     &__logo {
-        flex: 0 0 20%;
+        flex: 0 0 25%;
         text-align: left;
         img {
             width: 80px;
@@ -13,8 +13,37 @@
     }
 
     &__actions {
-        flex: 0 0 20%;
+        flex: 0 0 25%;
         text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .language-selector {
+        display: flex;
+        text-decoration: none;
+        cursor: pointer;
+        align-items: center;
+        margin-right: 2em;
+        border-bottom: 1px solid transparent;
+
+        &__global {
+            width: 21px;
+            position: relative;
+            top: 2px;
+        }
+
+        &__arrow-down {
+            width: 12px;
+        }
+
+        &__current {
+            padding: 0 0.8em;
+        }
+
+        &:hover {
+            border-bottom-color: var(--text-color);
+        }
     }
 
     &__menu {
@@ -39,6 +68,78 @@
                     border-bottom: 1px solid;
                 }
             }
+        }
+    }
+
+    @media (max-width: breakpoint-min('xxl')) {
+        padding: 1em;
+
+        &__menu {
+            li {
+                margin: 10px 15px;
+            }
+        }
+
+        .language-selector {
+            margin-right: 1em;
+        }
+
+        .btn-launch-app {
+            padding: 0.3em 1em;
+        }
+    }
+
+    @media (max-width: breakpoint-min('xl')) {
+    }
+}
+
+.header-mobile {
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+
+    &__hamberger {
+        flex: 0 0 28px;
+        font-size: 0;
+        display: block;
+        height: 25px;
+        padding: 1.5px;
+
+        &:before, &:after, .middle-stick {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--text-color);
+            border-radius: 2px;
+        }
+
+        &:before {
+            margin-bottom: 6px;
+        }
+
+        &:after {
+            margin-top: 6px;
+        }
+    }
+
+    &__main {
+        flex: 1 0 auto;
+    }
+
+    &__logo {
+        display: block;
+        width: 250px;
+        margin: auto;
+
+        img {
+            display: block;
+        }
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+        &__logo {
+            width: 150px;
         }
     }
 }

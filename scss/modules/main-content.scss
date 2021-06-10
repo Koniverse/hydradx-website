@@ -3,6 +3,10 @@ body {
   font-family: var(--main-font);
   font-size: 18px;
   background-color: var(--bgc);
+
+  @media (max-width: breakpoint-min('sm')) {
+    font-size: 15px;
+  }
 }
 
 a {
@@ -21,7 +25,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.5;
   margin: 0.7em 0;
 }
 
@@ -108,5 +112,9 @@ table.table {
       border-right: none;
       vertical-align: top;
     }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    padding: 0.3em 1em;
   }
 }
