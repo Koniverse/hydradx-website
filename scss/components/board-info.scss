@@ -1,12 +1,10 @@
 .board-info {
-  //background-color: #0B0D56;
   background-color: rgba(6, 7, 45, 0.5);
 
   &__label {
+    @extend .p-color;
     border: 2px solid var(--btn-border-color);
     background-color: var(--bgc);
-    //color: var(--primray-color);
-    //text-shadow: 0px 0px 10px rgba(246, 83, 162, 0.81);
     text-transform: uppercase;
     box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
     border-radius: 2px;
@@ -14,7 +12,6 @@
     font-size: 40px;
     font-family: var(--sans-font-hl);
     max-width: 690px;
-    width: 690px;
     text-align: center;
     height: 108px;
     line-height: 108px;
@@ -22,7 +19,7 @@
     margin: 0 auto;
 
     position: relative;
-    top: -54px;
+    transform: translateY(-50%);
   }
 
   &__body {
@@ -31,5 +28,27 @@
     padding: 1em 1em 4em 1em;
     max-width: 1036px;
     margin: auto;
+  }
+
+  @media (max-width: breakpoint-min('lg')) {
+    &__label {
+      max-width: 350px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    &__label {
+      max-width: 260px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 28px;
+    }
+
+    &__body {
+      padding: 0 1em 2em 1em;
+    }
   }
 }

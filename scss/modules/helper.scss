@@ -35,17 +35,29 @@
 .headline-1 {
     font-family: var(--sans-font-hl);
     font-size: 72px;
+
+    @media (max-width: breakpoint-min('lg')) {
+        font-size: 50px;
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+        font-size: 40px;
+    }
 }
 
 .headline-2 {
     font-family: var(--sans-font-hl);
     font-size: 40px;
+
+    @media (max-width: breakpoint-min('sm')) {
+        font-size: 28px;
+    }
 }
 
 .fz-24 {
     font-size: 24px;
 }
 
-
-
-
+[role="button"] {
+    cursor: pointer;
+}

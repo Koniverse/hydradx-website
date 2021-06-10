@@ -25,6 +25,15 @@
     }
   }
 
+  &__item--inline {
+    display: list-item;
+
+    &:before {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
   &__item--red {
     &:before {
       background-image: url("./images/arrow-red.svg");
@@ -37,6 +46,17 @@
     &:before {
       flex: 0 0 37px;
       margin: 0.4em 12px 0.4em 0;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    &__item--large {
+      font-size: 1em;
+
+      &:before {
+        margin: 0.5em 12px 0.5em 0;
+        flex: 0 0 22px;
+      }
     }
   }
 }

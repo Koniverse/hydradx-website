@@ -9,9 +9,9 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .container
+    .container.px-3
         .header-background
-        .weird-stroke
+        .weird-stroke.d-none
         .section-1
             .text-center
                 img.hydradx(src=url('/images/hydradx.png'))
@@ -19,8 +19,8 @@ block content
             h1.headline-1 Cross-chain Liquidity Protocol
 
             .row.section-1-info-box.gx-0
-                .col-6
-                    .info-box
+                .col-lg-6
+                    .info-box.info-box--shadow
                         .info-box__content
                             ul.listing
                                 li.listing__item The Future is Multichain
@@ -28,8 +28,8 @@ block content
                                 li.listing__item Stay Up To Date With The Future
                         .info-box__bottom
                             a.info-box__action(href='#') Subscribe
-                .col-6
-                    .info-box
+                .col-lg-6
+                    .info-box.info-box--shadow
                         .info-box__content
                             ul.listing
                                 li.listing__item Incentivized Testnet
@@ -43,44 +43,44 @@ block content
             h1.headline-2 Start building with us
 
             .row.section-2-building-with-us
-                .col-4
-                .col-4.text-center
+                .col-xl-4.d-none.d-xl-block
+                .col-xl-4.text-center.join-hydration
                     a.btn.btn__lg(href='#') Join Hydration
-                .col-4
+                .col-xl-4.community
                     ul.listing
                         li.listing__item.listing__item--large Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!
 
-        .board-info
+        .board-info.our-mission
             .board-info__label Our Mission
             .board-info__body
                 ul.listing.fz-24
-                    li.listing__item.justify-content-center Enable frictionless liquidity for all cryptoassets
-                    li.listing__item.justify-content-center Build open, neutral & autonomous protocol for liquidity
-                    li.listing__item.justify-content-center Enable global permisionaless finance
+                    li.listing__item.listing__item--inline Enable frictionless liquidity for all cryptoassets
+                    li.listing__item.listing__item--inline Build open, neutral & autonomous protocol for liquidity
+                    li.listing__item.listing__item--inline Enable global permisionaless finance
                 p.opacity-70 HydraDX is built as a parachain – specialized blockchain on Polkadot network, benefiting from shared security, speed and flexibility that it offers. HydraDX is optimized for a single purpose: enabling fluid programmable value exchange.
 
-        .section-2-info-box
+        .section-3
             .weird-logo-circling
             .row.row-1
-                .col-4
+                .col-xl-4.col-lg-6
                     .info-box.info-box--shadow.box-1
                         .info-box__content.text-center
                             p.heading APPLICATION-SPECIFIC CHAIN
                             span.text HydraDX is build to support various financial applications and optimized for DeFi use cases.
-                .col-4
-                .col-4
+                .col-xl-4.col-lg-6.d-none.d-xl-block
+                .col-xl-4.col-lg-6
                     .info-box.info-box--shadow.box-2
                         .info-box__content.text-center
                             p.heading POWERED BY HDX
                             span.text Native reserve token improves security and aligns incentives of key network participants. The total supply of HDX is a function of liquidity provisioned.
             .row.row-2
-                .col-4
+                .col-xl-4.col-lg-6
                     .info-box.info-box--shadow.box-3
                         .info-box__content.text-center
                             p.heading MULTI-ASSET LIQUIDITY OMNIPOOL
                             span.text Our unique solution enables combining all assets into one shared liquidity pool – unlocking unparalleled efficiency.
-                .col-4
-                .col-4
+                .col-xl-4.col-lg-6.d-none.d-xl-block
+                .col-xl-4.col-lg-6
                     .info-box.info-box--shadow.box-4
                         .info-box__content.text-center
                             p.heading NATIVE LIQUIDITY FOR POLKADOT ECOSYSTEM

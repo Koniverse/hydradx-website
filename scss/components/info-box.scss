@@ -28,4 +28,10 @@
   &--bold {
     border-width: 3px;
   }
+
+  @media (max-width: breakpoint-min('sm')) {
+    &__content {
+      padding: 1.5em 1em;
+    }
+  }
 }
