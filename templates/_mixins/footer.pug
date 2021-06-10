@@ -1,4 +1,10 @@
 mixin footer
     footer.footer
+        img.footer__logo(src=url('/images/logo-blue.svg'))
+        ul.footer__menu
+            each link in footerLinks
+                a.footer__menu-item.btn.btn__sm(href=link.url target=link.target)=link.text
+
+        img.footer__world(src=url('/images/world.gif'))
 
 

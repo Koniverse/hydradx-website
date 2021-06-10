@@ -22,7 +22,17 @@
   }
 
   &__sm {
+    padding: 0 0.5em;
     border-width: 1.5px;
     text-transform: capitalize;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    border-color: var(--primray-color);
+    background-color: var(--text-color);
+    color: var(--footer-bgc);
+    text-decoration: none;
   }
 }

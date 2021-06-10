@@ -1,2 +1,29 @@
 .footer {
+  background-color: var(--footer-bgc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+
+  &__logo {
+    width: 68px;
+    height: 68px;
+  }
+
+  &__world {
+    width: 79px;
+    height: 79px;
+  }
+
+  &__menu {
+    padding: 0;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__menu-item {
+    margin: 0.5em;
+  }
 }
