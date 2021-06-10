@@ -1,8 +1,8 @@
 const footerLinks = require('./data/footerLinks.json');
 
 module.exports = {
-    baseUrl: '',
-    baseContext: '',
+    baseUrl: 'https://web3vietnam.github.io/',
+    baseContext: 'hydradx-website',
     siteName: 'HydraDX',
     siteDescription: 'Cross-chain liquidity protocol built on Substrate',
     dateTimeFormat: 'ddd, MM/DD/YYYY - HH:mm',
