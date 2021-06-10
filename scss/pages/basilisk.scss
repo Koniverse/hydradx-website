@@ -1,0 +1,54 @@
+.page-basilisk {
+  .basilisk {
+    margin: 3em auto 7em auto;
+  }
+  .border-bottom {
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .border-right {
+    border-right: 2px solid var(--border-color);
+  }
+
+  .basilisk-logo {
+    background-color: #000000;
+    @extend .border-bottom;
+    @extend .border-right;
+  }
+
+  .basilisk-info {
+    padding: 1.5em;
+    @extend .border-bottom;
+    @extend .border-right;
+
+    .headline-2 {
+      margin: 0;
+    }
+  }
+
+  .basilisk-support {
+    padding: 1.5em 5em;
+    @extend .border-right;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .basilisk-learn-more {
+    background-color: #000000;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .headline-1 {
+      margin-bottom: 0.3em;
+    }
+
+    .overview-architecture {
+
+    }
+  }
+}

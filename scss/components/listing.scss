@@ -20,7 +20,7 @@
       background-size: contain;
       display: inline-block;
       vertical-align: middle;
-      margin: 0.5em 12px;
+      margin: 0.5em 12px 0.5em 0;
       flex: 0 0 22px;
     }
   }
@@ -36,7 +36,7 @@
 
     &:before {
       flex: 0 0 37px;
-      margin: 0.4em 12px;
+      margin: 0.4em 12px 0.4em 0;
     }
   }
 }

@@ -1,5 +1,5 @@
 .info-box {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--bgc);
 
   &__content {
@@ -23,5 +23,9 @@
   &--shadow {
     box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
     border-radius: 2px;
+  }
+
+  &--bold {
+    border-width: 3px;
   }
 }
