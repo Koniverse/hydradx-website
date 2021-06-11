@@ -1,6 +1,10 @@
 .page-basilisk {
   .basilisk {
     margin: 3em auto 7em auto;
+
+    @media (max-width: breakpoint-min('sm')) {
+      margin-top: 1em;
+    }
   }
   .border-bottom {
     border-bottom: 2px solid var(--border-color);
@@ -11,9 +15,25 @@
   }
 
   .basilisk-logo {
+    height: 300px;
+    display: flex;
     background-color: #000000;
+    background-image: url("./images/bg-basilisk-logo.png");
+    background-size: contain;
     @extend .border-bottom;
     @extend .border-right;
+
+    img {
+      width: 220px;
+      display: block;
+      margin: auto;
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+      img {
+        width: 160px;
+      }
+    }
   }
 
   .basilisk-info {
@@ -26,12 +46,26 @@
     }
   }
 
+  @media (max-width: breakpoint-min('xl')) {
+    .basilisk-logo, .basilisk-info, .basilisk-support {
+      border-right: none;
+    }
+
+    .basilisk-support {
+      border-bottom: 2px solid var(--border-color);
+    }
+  }
+
   .basilisk-support {
     padding: 1.5em 5em;
     @extend .border-right;
 
     h3 {
       margin: 0;
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+      padding: 1.5em;
     }
   }
 
@@ -41,14 +75,15 @@
     text-align: center;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     .headline-1 {
       margin-bottom: 0.3em;
+      margin-top: 0.5em;
     }
+  }
 
-    .overview-architecture {
-
-    }
+  .basilisk-call-to-action {
+    margin-bottom: 2em;
   }
 }
