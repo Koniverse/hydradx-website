@@ -1,19 +1,32 @@
 const $ = require('jquery');
 
-const toggleMobileMenu = () => {
-    const $body = $('body');
-    const $mobileMenu = $('header.header-desktop');
-    const $menuBtn = $('.header-mobile__hamberger');
+const $body = $('body');
+const $mobileMenu = $('header.header-desktop');
+const $mobileHeader = $('header.header-mobile');
+const $menuBtn = $('.header-mobile__hamberger');
 
-    $menuBtn.on('click', () => {
-        $menuBtn.toggleClass('open');
-        $body.toggleClass('no-scrolling');
-        $mobileMenu
-            .fadeToggle(300)
-            .css('display', 'flex');
+const isMobileMenuOpen = () => {
+    return $mobileHeader.hasClass('open');
+}
+
+const toggleMobileMenu = () => {
+    if (isMobileMenuOpen()) {
+        $mobileHeader.css('position', 'relative');
+    }
+
+    $mobileHeader.toggleClass('open');
+    $mobileMenu.fadeToggle(300, () => {
+        if (isMobileMenuOpen()) {
+            $mobileHeader.css('position', 'fixed');
+        }
     });
+    $body.toggleClass('no-scrolling');
+}
+
+const registerEvents = () => {
+    $menuBtn.on('click', toggleMobileMenu);
 }
 
 module.exports = () => {
-    toggleMobileMenu();
+    registerEvents();
 }

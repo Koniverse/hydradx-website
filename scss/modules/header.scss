@@ -108,6 +108,8 @@
         }
 
         &__menu {
+            height: calc(100% - 150px - 2em);
+            overflow-y: auto;
             li {
                 display: block;
                 font-size: 28px;
@@ -118,6 +120,7 @@
             flex-flow: column;
             justify-content: center;
             width: 100%;
+            height: 150px;
         }
 
         .language-selector {
@@ -138,6 +141,8 @@
     }
 
     @media (max-width: breakpoint-min('sm')) {
+        padding-top: 7em;
+
         &__menu {
             width: 100%;
             text-align: left;
@@ -151,6 +156,23 @@
     align-items: center;
     position: relative;
     z-index: 1000;
+
+    $self: &;
+    &.open {
+        width: 100%;
+
+        #{$self}__hamberger-meat {
+            opacity: 0;
+        }
+
+        #{$self}__hamberger:before {
+            transform: rotate(40deg) translate(6px, 7px);
+        }
+
+        #{$self}__hamberger:after {
+            transform: rotate(-40deg) translate(4px, -5px);
+        }
+    }
 
     &__hamberger {
         flex: 0 0 25px;
@@ -171,21 +193,6 @@
 
         &-meat {
             margin: 6px 0;
-        }
-
-        $self: &;
-        &.open {
-            #{$self}-meat {
-                opacity: 0;
-            }
-
-            &:before {
-                transform: rotate(40deg) translate(6px, 7px);
-            }
-
-            &:after {
-                transform: rotate(-40deg) translate(4px, -5px);
-            }
         }
     }
 
