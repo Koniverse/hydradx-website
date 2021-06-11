@@ -98,13 +98,15 @@ block content
         table.table.roadmap
             each one in roadmap
                 each task, index in one.tasks
+                    - var lastTaskClass = ((index === one.tasks.length - 1) ? 'task-last' : '');
+                    - var firstTaskClass = ((index === 0) ? 'task-first' : '');
                     tr(class=task.done ? '': 'p-color')
                         if index === 0
                             td.milestone(rowspan=one.tasks.length)=one.milestone
-                        td.task(class=((index === one.tasks.length - 1) ? 'task-last' : ''))
+                        td.task(class=`${firstTaskClass} ${lastTaskClass}`)
                             ul.listing
                                 li.listing__item(class=task.done ? '': 'listing__item--red')=task.name
-                        td.done(class=((index === one.tasks.length - 1) ? 'task-last' : ''))
+                        td.done(class=`${firstTaskClass} ${lastTaskClass}`)
                             ul.listing.listing__no-style
                                 li.listing__item=`${task.done ? '★' : '☆'}`
 

@@ -275,11 +275,6 @@
     }
   }
 
-  table.roadmap {
-    margin-bottom: 5em;
-    margin-top: 2em;
-  }
-
   .about-the-team {
     max-width: 360px;
     margin: 0 auto 5em auto;
@@ -287,6 +282,62 @@
 
     h2 {
       margin-bottom: 1.5em;
+    }
+  }
+
+  table.table.roadmap {
+    margin-bottom: 5em;
+    margin-top: 2em;
+
+    border: 2px solid var(--primray-color);
+    box-shadow: 0px 0px 40px rgba(246, 83, 162, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    border-spacing: 0;
+
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      padding: 0.3em 1em;
+      border-bottom: 1px solid var(--primray-color);
+      border-right: 1px solid var(--primray-color);
+
+      &.milestone {
+        vertical-align: top;
+        padding: 0.6em 1.5em;
+      }
+
+      &:last-child {
+        border-right: none;
+        vertical-align: top;
+      }
+
+      &.task:not(.task-last), &.done:not(.task-last) {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      li.listing__item {
+        padding: 0;
+      }
+
+      &.task-last {
+        padding-bottom: 0.7em;
+      }
+
+      &.task-first {
+        padding-top: 0.7em;
+      }
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+      td.milestone {
+        padding: 0.6em 1em;
+      }
     }
   }
 }
