@@ -95,6 +95,7 @@
   }
 
   .section-2-building-with-us {
+    position: relative;
     margin-top: 4em;
 
     @media (max-width: breakpoint-min('xl')) {
@@ -122,61 +123,43 @@
     width: 100%;
     height: 765px;
     position: absolute;
-    top: 1210px;
-    left: 0;
+    top: -50px;
+    left: -257px;
     z-index: -1;
 
     @media (max-width: breakpoint-min('xxl')) {
       height: 590px;
-    }
-
-    @media (max-width: 1367px) {
-      height: 550px;
-      left: -60px;
-      top: 1235px;
-    }
-
-    @media (max-width: 1280px) {
-      left: -100px;
-      top: 1235px;
+      left: -210px;
+      top: -33px;
     }
 
     @media (max-width: breakpoint-min('xl')) {
-      left: -130px;
-      top: 1223px;
+      left: -280px;
+      top: -42px;
     }
 
     @media (max-width: breakpoint-min('lg')) {
-      left: -160px;
-      height: 475px;
-      top: 1295px;
+      left: -385px;
+      top: -50px;
     }
 
     @media (max-width: breakpoint-min('md')) {
-      left: -220px;
-      height: 475px;
-      top: 1440px;
+      left: -280px;
+      top: 10px;
     }
 
     @media (max-width: breakpoint-min('sm')) {
-      left: -150px;
+      left: -230px;
+      top: -40px;
+      height: 600px;
+      width: 600px;
+    }
+
+    @media (max-width: 430px) {
+      left: -230px;
+      top: -22px;
       height: 500px;
       width: 500px;
-      top: 1023px;
-    }
-
-    @media (max-width: 479px) {
-      left: -223px;
-      top: 1080px;
-    }
-
-    @media (max-width: 464px) {
-      left: -240px;
-      top: 1142px;
-    }
-
-    @media (max-width: 356px) {
-      top: 1225px;
     }
   }
 

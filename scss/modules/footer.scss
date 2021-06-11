@@ -1,4 +1,6 @@
 .footer {
+  margin-top: 5em;
+
   &__shape {
     position: relative;
     top: 20px;
@@ -47,6 +49,8 @@
   }
 
   @media (max-width: breakpoint-min('sm') - 1px) {
+    margin-top: 8em;
+
     &__logo {
       margin-top: calc(((100% + 2em) * (-84) / 574) - 52px);
       margin-bottom: 1.5em;
