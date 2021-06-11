@@ -61,3 +61,12 @@
 [role="button"] {
     cursor: pointer;
 }
+
+.link-highlight-on-hover {
+    text-decoration: none;
+
+    &:hover {
+        color: var(--primray-color);
+        border-bottom: 1px solid;
+    }
+}
