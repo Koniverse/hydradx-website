@@ -52,13 +52,23 @@ const getLanguageMenu = () => {
 
 const toggleMobileLanguageMenu = () => {
     const opened = isMobileLanguageMenuOpened();
-    $mobilePopup.find('ul.header__menu').remove();
 
-    if (opened) {
-        $mobilePopup.find('.header__logo').after($bkMobileMenu);
-    } else {
-        $mobilePopup.find('.header__logo').after(getLanguageMenu());
-    }
+    $mobilePopup
+        .find('ul.header__menu')
+        .fadeOut(100)
+        .remove();
+
+    const $newMenu = opened
+        ? $bkMobileMenu
+        : getLanguageMenu();
+
+    $newMenu
+        .css('display', 'none')
+        .fadeIn(300);
+
+    $mobilePopup
+        .find('.header__logo')
+        .after($newMenu);
 }
 
 const toggleLanguageMenu = () => {
