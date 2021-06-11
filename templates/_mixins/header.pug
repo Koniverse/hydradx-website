@@ -1,5 +1,5 @@
 mixin header
-    header.header.header-desktop.d-none.d-xl-flex
+    header.header.header-desktop
         a.header__logo(href=url('/'))
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
@@ -17,7 +17,7 @@ mixin header
                 span.language-selector__current ENG
                 img.language-selector__arrow-down(src=url('/images/arrow-down.svg'))
 
-            a.btn.btn__md.ff-sans-hl.btn-launch-app(href='#') Launch App
+            a.btn.btn__md.btn-launch-app(href='#') Launch App
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
             div.header-mobile__hamberger-meat

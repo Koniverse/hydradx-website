@@ -7,6 +7,10 @@ body {
   @media (max-width: breakpoint-min('sm')) {
     font-size: 15px;
   }
+
+  &.no-scrolling {
+    overflow-y: hidden;
+  }
 }
 
 a {
