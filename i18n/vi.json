@@ -5,5 +5,8 @@
 	"about": "Trang chủ",
 	"docs": "Tài Liệu",
 	"basilisk": "basilisk",
-	"joinHydration": "T.Gia Hydration"
+	"joinHydration": "T.Gia Hydration",
+	"launchApp": "Chạy App",
+	"aboutTheTeam": "Về chúng tôi",
+	"aboutTheTeamIntro": "Hydra DX được phát triển bởi %s - tổ chức xây dựng ứng dụng trên nền tảng Substrate vì một thế giới tốt đẹp hơn."
 }

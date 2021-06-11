@@ -26,7 +26,7 @@ mixin header
                 img.language-selector__arrow-down(src=url('/images/arrow-down.svg'))
 
 
-            a.btn.btn__md.btn-launch-app(href='#') Launch App
+            a.btn.btn__md.btn-launch-app(href=header.launchAppUrl target='_blank')=__('launchApp')
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
             div.header-mobile__hamberger-meat

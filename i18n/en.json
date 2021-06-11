@@ -5,5 +5,8 @@
 	"about": "About",
 	"docs": "Docs",
 	"basilisk": "Basilisk",
-	"joinHydration": "Join Hydration"
+	"joinHydration": "Join Hydration",
+	"launchApp": "Launch App",
+	"aboutTheTeam": "About the team",
+	"aboutTheTeamIntro": "Hydra DX is developed by %s - Substrate oriented dev house building indy & cool stuff, with the goal of improving the Universe."
 }
