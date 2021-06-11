@@ -1,6 +1,22 @@
 {
   "menu": [
-
+    {
+      "text": "about",
+      "url": "/"
+    },
+    {
+      "text": "docs",
+      "url": "/#",
+      "target": "_blank"
+    },
+    {
+      "text": "basilisk",
+      "url": "/basilisk.html"
+    },
+    {
+      "text": "joinHydration",
+      "url": "/join-hydration.html"
+    }
   ],
   "languages": {
     "en": "Eng",

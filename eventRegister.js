@@ -33,7 +33,7 @@ const generateJs = function() {
 const watchJS = function() {
     gulp.watch(
         './js/**/*.js',
-        gulp.series(generateJs.bind(this), 'reloadBrowser')
+        gulp.series(generateJs.bind(this), this.reloadBrowser.bind(this))
     )
 }
 

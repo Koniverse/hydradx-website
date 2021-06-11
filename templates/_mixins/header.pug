@@ -1,18 +1,14 @@
 mixin header
     - var active = (name) => templateName === name ? 'active' : ''
+    - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
 
     header.header.header-desktop.d-xl-flex
         a.header__logo(href=url('/'))
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
-            li
-                a(href=url('/', locale) class=active('index')) About
-            li
-                a(href='#') Docs
-            li
-                a(href=url('/basilisk.html', locale) class=active('basilisk')) Basilisk
-            li
-                a(href=url('/join-hydration.html', locale) class=active('join-hydration')) Join Hydration
+            each item in header.menu
+                li
+                    a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
         .header__actions
             - var currentLanguage = 'Eng'
             ul.language-menu

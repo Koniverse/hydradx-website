@@ -1,5 +1,9 @@
 {
 	"Hydra DX is developed by ": "Hydra DX is developed by ",
 	"siteName": "siteName",
-	"siteDescription": "siteDescription"
+	"siteDescription": "siteDescription",
+	"about": "About",
+	"docs": "Docs",
+	"basilisk": "Basilisk",
+	"joinHydration": "Join Hydration"
 }
