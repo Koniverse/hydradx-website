@@ -15,7 +15,7 @@
       background-size: cover;
       background-position-x: right;
       height: 975px;
-      top: -115px;
+      top: -80px;
 
       &:before {
         content: '';
@@ -107,6 +107,12 @@
         margin: auto;
       }
     }
+
+    @media (max-width: breakpoint-min('sm')) {
+      .join-hydration {
+        text-align: right;
+      }
+    }
   }
 
   .weird-stroke {
@@ -116,7 +122,7 @@
     width: 100%;
     height: 765px;
     position: absolute;
-    top: 1165px;
+    top: 1210px;
     left: 0;
     z-index: -1;
 
@@ -126,17 +132,52 @@
 
     @media (max-width: 1367px) {
       height: 550px;
+      left: -60px;
+      top: 1235px;
     }
 
     @media (max-width: 1280px) {
-      left: -105px;
-      top: 1190px;
+      left: -100px;
+      top: 1235px;
     }
 
     @media (max-width: breakpoint-min('xl')) {
-      left: -145px;
+      left: -130px;
+      top: 1223px;
     }
 
+    @media (max-width: breakpoint-min('lg')) {
+      left: -160px;
+      height: 475px;
+      top: 1295px;
+    }
+
+    @media (max-width: breakpoint-min('md')) {
+      left: -220px;
+      height: 475px;
+      top: 1440px;
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
+      left: -150px;
+      height: 500px;
+      width: 500px;
+      top: 1023px;
+    }
+
+    @media (max-width: 479px) {
+      left: -223px;
+      top: 1080px;
+    }
+
+    @media (max-width: 464px) {
+      left: -240px;
+      top: 1142px;
+    }
+
+    @media (max-width: 356px) {
+      top: 1225px;
+    }
   }
 
   .section-3 {
@@ -168,6 +209,8 @@
 
     @media (max-width: breakpoint-min('xl')) {
       margin-top: 0;
+      margin-bottom: 8em;
+
       .weird-logo-circling {
         position: static;
         height: 300px;
@@ -196,10 +239,17 @@
       }
     }
 
-    @media (max-width: breakpoint-min('sm')) {
+    @media (max-width: breakpoint-min('lg')) {
       margin-bottom: 5em;
+    }
+
+    @media (max-width: breakpoint-min('sm')) {
       span.text {
         font-size: 1em;
+      }
+
+      p.heading {
+        font-size: 1.1em;
       }
 
       .weird-logo-circling {
@@ -254,14 +304,6 @@
 
     h2 {
       margin-bottom: 1.5em;
-    }
-
-    a {
-      white-space: nowrap;
-      display: inline-block;
-      border: 1.5px solid var(--border-color);
-      padding: 0 5px;
-      text-decoration: none;
     }
   }
 }

@@ -36,4 +36,11 @@
     color: var(--footer-bgc);
     text-decoration: none;
   }
+
+  @media (max-width: breakpoint-min(sm)) {
+    &__lg {
+      padding: 0.4em 2em;
+      font-size: 1.1em;
+    }
+  }
 }

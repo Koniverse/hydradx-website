@@ -1,0 +1,106 @@
+[
+  {
+    "milestone": "Q2 2019",
+    "tasks": [
+      {
+        "name": "Idea of building cross-chain liquidity protocol",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q3 2019",
+    "tasks": [
+      {
+        "name": "Building tooling for Polkadot & first xyk PoC",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q3 2020",
+    "tasks": [
+      {
+        "name": "Invented new CFMM model",
+        "done": true
+      },
+      {
+        "name": "Buit POS chain",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q4 2020",
+    "tasks": [
+      {
+        "name": "Started a hack-net",
+        "done": true
+      },
+      {
+        "name": "Transaction payments in exogenous tokens & in-block order matching",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q1 2021",
+    "tasks": [
+      {
+        "name": "The most successful LBP token distribution",
+        "done": true
+      },
+      {
+        "name": "Connected to Rococo testnet & cross-chain token transfers",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q2 2021",
+    "tasks": [
+      {
+        "name": "Enabled Staking & launched Incentivized Testnet",
+        "done": true
+      },
+      {
+        "name": "Released first version of HydraDX-js SDK",
+        "done": true
+      },
+      {
+        "name": "Start Audits",
+        "done": true
+      },
+      {
+        "name": "Release Basilisk parachain on Kusama",
+        "done": true
+      },
+      {
+        "name": "Conduct BSX LBP on Basilisk",
+        "done": true
+      }
+    ]
+  },
+  {
+    "milestone": "Q4 2021",
+    "tasks": [
+      {
+        "name": "Build parachain staking module",
+        "done": false
+      },
+      {
+        "name": "HydraDX launching Polkadot parachai",
+        "done": false
+      }
+    ]
+  },
+  {
+    "milestone": "2022",
+    "tasks": [
+      {
+        "name": "Focusing on HydraDX & Basilisk adoption",
+        "done": false
+      }
+    ]
+  }
+]

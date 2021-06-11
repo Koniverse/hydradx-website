@@ -94,7 +94,7 @@
 }
 
 .header-mobile {
-    padding: 2em 1em;
+    padding: 1em;
     display: flex;
     align-items: center;
 
@@ -105,7 +105,7 @@
         height: 25px;
         padding: 1.5px;
 
-        &:before, &:after, .middle-stick {
+        &:before, &:after, &-meat {
             content: '';
             display: inline-block;
             width: 25px;
@@ -138,6 +138,8 @@
     }
 
     @media (max-width: breakpoint-min('sm')) {
+        padding: 2em 1em;
+
         &__logo {
             width: 150px;
         }
