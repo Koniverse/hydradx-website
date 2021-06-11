@@ -11,7 +11,7 @@ block append head
 block content
     .container.px-3
         .header-background
-        .weird-stroke.d-none
+        .weird-stroke
         .section-1
             .text-center
                 img.hydradx(src=url('/images/hydradx.png'))
@@ -96,101 +96,23 @@ block content
 
         h1.headline-2 Roadmap
         table.table.roadmap
-            tr
-                td Q2 2019
-                td
-                    ul.listing
-                        li.listing__item Idea of building cross-chain liquidity protocol
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-            tr
-                td Q3 2019
-                td
-                    ul.listing
-                        li.listing__item Building tooling for Polkadot & first xyk PoC
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-            tr
-                td Q3 2020
-                td
-                    ul.listing
-                        li.listing__item Invented new CFMM model
-                        li.listing__item Buit POS chain
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-                        li.listing__item ★
-            tr
-                td Q4 2020
-                td
-                    ul.listing
-                        li.listing__item Started a hack-net
-                        li.listing__item Transaction payments in exogenous tokens & in-block order matching
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-                        li.listing__item ★
-            tr
-                td Q1 2021
-                td
-                    ul.listing
-                        li.listing__item The most successful LBP token distribution
-                        li.listing__item Connected to Rococo testnet & cross-chain token transfers
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-                        li.listing__item ★
-            tr
-                td Q2 2021
-                td
-                    ul.listing
-                        li.listing__item Enabled Staking & launched Incentivized Testnet
-                        li.listing__item Released first version of HydraDX-js SDK
-                        li.listing__item Start Audits
-                        li.listing__item Release Basilisk parachain on Kusama
-                        li.listing__item Conduct BSX LBP on Basilisk
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ★
-                        li.listing__item ★
-                        li.listing__item ★
-                        li.listing__item ★
-                        li.listing__item ★
-            tr.p-color
-                td Q3 2021
-                td
-                    ul.listing
-                        li.listing__item.listing__item--red Enable LBP functionality for other assets on Basilisk
-                        li.listing__item.listing__item--red Test financial applications and governance on Basilisk
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ☆
-                        li.listing__item ☆
-            tr.p-color
-                td Q4 2021
-                td
-                    ul.listing
-                        li.listing__item.listing__item--red Build parachain staking module
-                        li.listing__item.listing__item--red HydraDX launching Polkadot parachai
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ☆
-                        li.listing__item ☆
-            tr.p-color
-                td 2022
-                td
-                    ul.listing
-                        li.listing__item.listing__item--red Focusing on HydraDX & Basilisk adoption
-                td
-                    ul.listing.listing__no-style
-                        li.listing__item ☆
+            each one in roadmap
+                each task, index in one.tasks
+                    tr(class=task.done ? '': 'p-color')
+                        if index === 0
+                            td.milestone(rowspan=one.tasks.length)=one.milestone
+                        td.task(class=((index === one.tasks.length - 1) ? 'task-last' : ''))
+                            ul.listing
+                                li.listing__item(class=task.done ? '': 'listing__item--red')=task.name
+                        td.done(class=((index === one.tasks.length - 1) ? 'task-last' : ''))
+                            ul.listing.listing__no-style
+                                li.listing__item=`${task.done ? '★' : '☆'}`
+
 
         .about-the-team.text-center
             h1.p-color.p-shadow.text-uppercase About the team
             img(src=url('/images/galactic-council.svg') style="width: 205px")
             p.p-color=__('Hydra DX is developed by ')
-                a.p-color(href='#') Galactic Council
+                a(href='#') Galactic Council
                 | &nbsp;- Substrate oriented dev house building indy & cool stuff, with the goal of improving the Universe.
 

@@ -103,18 +103,41 @@ table.table {
     border-bottom: 1px solid var(--primray-color);
     border-right: 1px solid var(--primray-color);
 
-    &:first-child {
+    &.milestone {
       vertical-align: top;
-      padding: 0.7em 1.5em;
+      padding: 0.6em 1.5em;
     }
 
     &:last-child {
       border-right: none;
       vertical-align: top;
     }
+
+    &.task:not(.task-last), &.done:not(.task-last) {
+      border-bottom: none;
+    }
   }
 
   @media (max-width: breakpoint-min('sm')) {
-    padding: 0.3em 1em;
+    td:first-child {
+      //padding: 0.7em 1em;
+    }
+  }
+}
+
+p {
+  a {
+    color: inherit;
+    white-space: nowrap;
+    display: inline-block;
+    border: 1.5px solid var(--border-color);
+    padding: 0 5px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--border-color);
+      color: var(--footer-bgc);
+      text-decoration: none;
+    }
   }
 }

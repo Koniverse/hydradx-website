@@ -1,4 +1,5 @@
 const footerLinks = require('./data/footerLinks.json');
+const roadmap = require('./data/roadmap.json');
 
 module.exports = {
     baseUrl: 'https://web3vietnam.github.io/',
@@ -8,5 +9,6 @@ module.exports = {
     dateTimeFormat: 'ddd, MM/DD/YYYY - HH:mm',
     dateFormat: 'MM/DD/YYYY',
     postUrlStyle: 'POSTS_SLUG',
-    footerLinks
+    footerLinks,
+    roadmap
 };
