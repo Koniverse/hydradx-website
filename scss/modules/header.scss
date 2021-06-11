@@ -84,6 +84,11 @@
 
             a {
                 @extend .link-highlight-on-hover;
+
+                &.active {
+                    color: var(--primray-color);
+                    border-bottom: 1px solid;
+                }
             }
         }
     }

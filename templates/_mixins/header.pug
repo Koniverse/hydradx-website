@@ -1,16 +1,14 @@
 mixin header
+    - var active = (name) => templateName === name ? 'active' : ''
+    - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
+
     header.header.header-desktop.d-xl-flex
         a.header__logo(href=url('/'))
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
-            li
-                a(href=url('/', locale)) About
-            li
-                a(href=url('/docs.html', locale)) Docs
-            li
-                a(href=url('/basilisk.html', locale)) Basilisk
-            li
-                a(href=url('/join-hydration.html', locale)) Join Hydration
+            each item in header.menu
+                li
+                    a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
         .header__actions
             - var currentLanguage = 'Eng'
             ul.language-menu
@@ -28,7 +26,7 @@ mixin header
                 img.language-selector__arrow-down(src=url('/images/arrow-down.svg'))
 
 
-            a.btn.btn__md.btn-launch-app(href='#') Launch App
+            a.btn.btn__md.btn-launch-app(href=header.launchAppUrl target='_blank')=__('launchApp')
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
             div.header-mobile__hamberger-meat

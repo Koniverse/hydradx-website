@@ -112,9 +112,9 @@ block content
 
 
         .about-the-team.text-center
-            h1.p-color.p-shadow.text-uppercase About the team
+            h1.p-color.p-shadow.text-uppercase=__('aboutTheTeam')
             img(src=url('/images/galactic-council.svg') style="width: 205px")
-            p.p-color=__('Hydra DX is developed by ')
-                a(href='#') Galactic Council
-                | &nbsp;- Substrate oriented dev house building indy & cool stuff, with the goal of improving the Universe.
+            - var gcUrl = '<a href="#">Galactic Council</a>'
+            p.p-color !{__('aboutTheTeamIntro', gcUrl)}
+
 
