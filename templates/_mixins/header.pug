@@ -1,5 +1,5 @@
 mixin header
-    header.header.header-desktop
+    header.header.header-desktop.d-xl-flex
         a.header__logo(href=url('/'))
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
@@ -12,10 +12,21 @@ mixin header
             li
                 a(href=url('/join-hydration.html', locale)) Join Hydration
         .header__actions
+            - var currentLanguage = 'Eng'
+            ul.language-menu
+                each language, _locale in header.languages
+                    if _locale === locale
+                        - currentLanguage = language
+                    li
+                        a(href=url('/', _locale))=language
+                li.d-xl-none
+                    a.back(role='button') Back
+
             div.language-selector
                 img.language-selector__global(src=url('/images/global.svg'))
-                span.language-selector__current ENG
+                span.language-selector__current=currentLanguage
                 img.language-selector__arrow-down(src=url('/images/arrow-down.svg'))
+
 
             a.btn.btn__md.btn-launch-app(href='#') Launch App
     header.header-mobile.d-xl-none
