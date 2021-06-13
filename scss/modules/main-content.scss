@@ -10,6 +10,7 @@ body {
 
   &.no-scrolling {
     overflow-y: hidden;
+    position: fixed; // fix for ios devices
   }
 }
 
