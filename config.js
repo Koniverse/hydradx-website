@@ -2,6 +2,7 @@ const eventRegister = require('./eventRegister');
 const footerLinks = require('./data/footerLinks.json');
 const roadmap = require('./data/roadmap.json');
 const header = require('./data/header.json');
+const about = require('./data/about.json');
 
 module.exports = {
     baseUrl: 'https://web3vietnam.github.io/',
@@ -16,5 +17,6 @@ module.exports = {
     eventRegister,
     footerLinks,
     roadmap,
-    header
+    header,
+    about
 };

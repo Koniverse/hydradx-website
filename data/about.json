@@ -1,0 +1,27 @@
+{
+  "aboutHydradx": [
+    "The Future is Multichain and Shared Liquidity.",
+    "We enable frictionless liquidity for all crypto-assets",
+    "Build open, neutral & autonomous protocol for liquidity",
+    "Enable global permissionless finance."
+  ],
+  "informationAboutHydraDx": [
+    {
+      "title": "multi-asset liquidity omnipool",
+      "text": "Our unique solution enables combining all assets into one shared liquidity pool – unlocking unparalleled efficiency."
+    },
+    {
+      "title": "powered by hdx",
+      "text": "Native reserve token improves security and aligns incentives of key network participants. The total supply of HDX is a function of liquidity provisioned."
+    }
+  ],
+  "advantages": [
+    "Low transaction costs",
+    "High transaction speed",
+    "Users don’t have to use asset in pairs, rather one or any number of assets",
+    "Users can put their idle capital to work",
+    "Financial infrastructure for developers and their applications (e.g. swap assets directly in wallet, you can plug it to dex aggregators or liquidity aggregator yearn finance)",
+    "Immediate asset exchange - swap",
+    "Liquidity providing - instead of just holding your assets on a wallet, you can provide asset to liquidity pool to earn fees and HDX"
+  ]
+}

@@ -5,17 +5,29 @@
       "url": "/"
     },
     {
-      "text": "docs",
+      "text": "network",
       "url": "/#",
       "target": "_blank"
     },
     {
-      "text": "basilisk",
-      "url": "/basilisk.html"
+      "text": "dummies",
+      "url": "/#",
+      "target": "_blank"
     },
     {
-      "text": "joinHydration",
-      "url": "/join-hydration.html"
+      "text": "grants & bouties",
+      "url": "/#",
+      "target": "_blank"
+    },
+    {
+      "text": "new letter",
+      "url": "/#",
+      "target": "_blank"
+    },
+    {
+      "text": "faq",
+      "url": "/#",
+      "target": "_blank"
     }
   ],
   "languages": {
