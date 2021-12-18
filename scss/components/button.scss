@@ -14,8 +14,9 @@
   }
 
   &__lg {
-    padding: 18px 2.5em;
+    padding: 16px 2.7em;
     font-size: 24px;
+    line-height: 25px;
   }
 
   &__md {
@@ -26,11 +27,13 @@
   }
 
   &__sm {
-    padding: 0 0.5em;
+    padding: 5px 0.6em;
     border-width: 1.5px;
     text-transform: capitalize;
     text-shadow: none;
     box-shadow: none;
+    font-size: 18px;
+    line-height: 19px;
   }
 
   &:hover {
@@ -38,6 +41,13 @@
     background-color: var(--text-color);
     color: var(--footer-bgc);
     text-decoration: none;
+  }
+
+  @media (max-width: breakpoint-min(lg)) {
+    &__lg {
+      padding: 0.4em 2em;
+      font-size: 1.1em;
+    }
   }
 
   @media (max-width: breakpoint-min(sm)) {

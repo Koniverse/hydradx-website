@@ -2,31 +2,30 @@ mixin header
     - var active = (name) => templateName === name ? 'active' : ''
     - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
 
+    .hdx-top-header-contribute
+        .hdx-top-header-contribute__text The HydraDX Crowdloan is Live.
+        .btn.btn__sm.contribute-button Contribute Now
     header.header.header-desktop.d-xl-flex
         a.header__logo(href=url('/'))
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
             each item in header.menu
-                li
-                    a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
-        .header__actions
-            - var currentLanguage = 'Eng'
-            ul.language-menu
-                each language, _locale in header.languages
-                    if _locale === locale
-                        - currentLanguage = language
-                    li
-                        a(href=url('/', _locale))=language
-                //li.d-xl-none
-                //    a.back(role='button') Back
+                li.menu-item
+                    .menu-item-btn
+                        a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
+                        if item.dropdown
+                            img.menu-item__arrow-down(src=url('/images/pink-arrow-down.svg'))
+                    if item.dropdown
+                        ul.dropout-menu
+                            each childItem in item.dropdownItem
+                                a.dropout-menu-link(href=url(childItem.url) target='_blank')
+                                    li.dropout-menu-item=childItem.text
+        .header-social-media-container
+            .header-social-media-text Get in touch
+            .header-social-media-list
+                each network in header.socialNetwork
+                    +hdx-social-media-btn(network.name, network.color)
 
-            div.language-selector
-                img.language-selector__global(src=url('/images/global.svg'))
-                span.language-selector__current=currentLanguage
-                img.language-selector__arrow-down(src=url('/images/arrow-down.svg'))
-
-
-            a.btn.btn__md.btn-launch-app(href=header.launchAppUrl target='_blank')=__('launchApp')
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
             div.header-mobile__hamberger-meat

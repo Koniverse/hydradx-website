@@ -82,6 +82,19 @@
     ]
   },
   {
+    "milestone": "Q3 2021",
+    "tasks": [
+      {
+        "name": "Enable LBP functionality for other assets on Basilisk",
+        "done": false
+      },
+      {
+        "name": "Test financial applications and governance on Basilisk",
+        "done": false
+      }
+    ]
+  },
+  {
     "milestone": "Q4 2021",
     "tasks": [
       {

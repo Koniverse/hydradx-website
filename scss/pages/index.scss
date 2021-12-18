@@ -8,7 +8,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 0;
+    top: 56px;
     left: 0;
     min-width: $min-width;
   }
@@ -49,6 +49,13 @@
   .hdx-midle-content-container {
     background: linear-gradient(180deg, #0D106E 8.29%, #0B0D56 76.59%);
     margin-top: -10px;
+    position: relative;
+  }
+
+  .hdx-midle-content-container .hdx-left-body-icon-container {
+    position: absolute;
+    left: 0;
+    bottom: -86px;
   }
 
   .hdx-about-hydradx-advantages-container {
@@ -111,7 +118,15 @@
 
   .hdx-more-information-container {
     margin-top: 130px;
+    position: relative;
   }
+
+  .hdx-more-information-container .hdx-right-body-icon-container {
+    position: absolute;
+    right: 0;
+    top: 263px;
+  }
+
 
   .hdx-teams-behind-container {
     background-size: 100% auto;
@@ -264,6 +279,102 @@
       td.milestone {
         padding: 0.7em 1em;
       }
+    }
+
+    .hdx-start-building-with-us-container {
+
+    }
+  }
+
+  .hdx-start-building-with-us-container {
+    margin-bottom: 200px;
+  }
+
+  .hdx-start-building-with-us-background {
+    background-size: contain;
+    background-image: url("./images/start-building-with-us-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 451px;
+    z-index: -1;
+    width: 100%;
+    position: relative;
+  }
+
+  .weird-stroke {
+    background-image: url("./images/weird_stroke.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 765px;
+    position: absolute;
+    top: -14px;
+    left: -5px;
+    z-index: -1;
+  }
+
+  .join-hydration {
+    margin-top: 44px;
+  }
+
+  .community {
+    margin-top: 52px;
+  }
+
+
+  @media (max-width: breakpoint-min('xxl')) {
+    .weird-stroke {
+      height: 590px;
+      left: -33px;
+      top: 0;
+    }
+  }
+
+  @media (max-width: breakpoint-min('xl')) {
+    .weird-stroke {
+      left: -190px;
+      top: 6px;
+    }
+
+  }
+  @media (max-width: breakpoint-min('lg')) {
+    .weird-stroke {
+      height: 460px;
+      left: -120px;
+      top: 16px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('md')) {
+    .weird-stroke {
+      left: -150px;
+      top: 15px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    .weird-stroke {
+      left: -120px;
+      top: 10px;
+      height: 300px;
+    }
+
+    .join-hydration {
+      margin-top: 30px;
+    }
+
+    .community {
+      margin-top: 34px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .weird-stroke {
+      left: -230px;
+      top: -22px;
+      height: 500px;
+      width: 500px;
     }
   }
 }

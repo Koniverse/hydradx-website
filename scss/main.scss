@@ -9,6 +9,7 @@
 @import './modules/header';
 @import './modules/footer';
 @import './modules/layout';
+@import './modules/dropdown-menu';
 @import './modules/main-content';
 
 @import './components/listing';
@@ -20,8 +21,11 @@
 @import './components/hdx-info-box-with-header';
 @import './components/hdx-left-body-icon';
 @import './components/hdx-right-body-icon';
+@import './components/hdx-social-media-btn';
 
 @import './pages/index';
+@import './pages/tokenomics';
+@import './pages/democracy';
 @import './pages/404';
 @import './pages/basilisk';
 @import './pages/join-hydration';

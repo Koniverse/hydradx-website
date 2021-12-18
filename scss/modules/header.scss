@@ -1,3 +1,68 @@
+.hdx-top-header-contribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+    background-color: var(--primray-color);
+}
+
+.hdx-top-header-contribute__text {
+    font-size: 24px;
+    line-height: 44px;
+    color: var(--header-contribute-text-color);
+    margin-right: 22px;
+}
+
+.contribute-button.contribute-button.contribute-button {
+    height: 32px;
+    background-color: var(--code-color);
+    color: var(--header-contribute-text-color);
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.contribute-button:before {
+    position: absolute;
+    border: 2px solid var(--header-contribute-text-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+}
+
+.header-social-media-container {
+
+}
+
+.header-social-media-text {
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.header-social-media-list {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.twitter-color {
+    background-color: var(--twitter-color);
+}
+
+.github-color {
+    background-color: var(--github-color)
+}
+
+.telegram-color {
+    background-color:var(--telegram-color)
+}
+
+.discord-color {
+    background-color: var(--discord-color)
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -81,6 +146,7 @@
         li {
             display: inline-block;
             margin: 10px 13px;
+            position: relative;
 
             a {
                 @extend .link-highlight-on-hover;
@@ -165,6 +231,15 @@
             text-align: left;
         }
     }
+}
+
+.menu-item-btn {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item__arrow-down {
+    padding-left: 6px;
 }
 
 .header-mobile {

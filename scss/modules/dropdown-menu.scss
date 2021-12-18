@@ -1,0 +1,57 @@
+.menu-item:hover .dropout-menu {
+  display: block;
+}
+
+.dropout-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--bgc);
+  border: 2px solid var(--border-color);
+  list-style-type: none;
+  max-width: 396px;
+  z-index: 10;
+  border-radius: 2px;
+  box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
+  //text-transform: capitalize;
+
+  &-item {
+    margin: 0 !important;
+    width: fit-content;
+    color: $text-color;
+    font-family: $sans-font;
+    text-align: left;
+    font-size: 18px !important;
+    line-height: 30px;
+    white-space: nowrap;
+    text-transform: initial;
+
+    @media (max-width: breakpoint-min('sm')) {
+      white-space: normal;
+      line-height: 22px;
+      padding: 10px 2px 10px 30px;
+    }
+
+    &:hover {
+      transition: background 0.5s;
+      cursor: pointer;
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 63px 5px 21px;
+
+    &:hover {
+      border-bottom: none !important;
+    }
+  }
+
+}

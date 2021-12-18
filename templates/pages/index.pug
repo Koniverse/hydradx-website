@@ -44,13 +44,16 @@ block content
                         img.hdx-hydradx2-infographic(src=url('/images/hydradx2.png'))
                     .hdx-hydradx1-infographic__title.fz-20.p-color.p-shadow.text-center CROSS-CHAIN LIQUIDITY PROTOCOL
                     .hdx-hydradx1-infographic__text.text-center HydraDX is built as a parachain – specialized blockchain on Polkadot network, benefiting from shared security, speed, flexibility and possibility to work with any Ethereum based asset, Polkadot native assets and Bitcoin with more coming
-    .container
-        .hdx-more-information-container.row
-            .col-lg-6.px-0
-                .fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase HydraDX is build to support various financial applications and optimized for DeFi use cases.
-            .col-lg-6.px-0
-                each hdxAdvantage in about.advantages
-                    +hdx-text-with-arrow(hdxAdvantage)
+        +hdx-left-body-icon
+    .hdx-more-information-container
+        .container
+            .row
+                .col-lg-6.px-0
+                    .fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase HydraDX is build to support various financial applications and optimized for DeFi use cases.
+                .col-lg-6.px-0
+                    each hdxAdvantage in about.advantages
+                        +hdx-text-with-arrow(hdxAdvantage)
+        +hdx-right-body-icon
     .hdx-teams-behind-container
         .container
             .fz-40.p-color.ff-sans-hl.h-text-transform-uppercase.text-center The Teams behind HydraDX
@@ -98,6 +101,14 @@ block content
                     .fz-20.p-color.h-text-transform-uppercase.p-shadow Sub0 Online: Basilisk's Take on Existential Deposits in a Multi Asset World
                     .hdx-video-and-podcast-text What is an existential deposit, why is it important and how can it be addressed in a multi chain universe.
     .hdx-start-building-with-us-container
+        h1.headline-2 Start buiding with us
+        .hdx-start-building-with-us-background.row
+            .col-xl-4.d-none.d-xl-block
+            .col-xl-4.text-center.join-hydration
+                .weird-stroke
+                a.btn.btn__lg(href='#') Join Hydration
+            .col-xl-4.community
+                +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
     .container.px-3
         h1.headline-2 Roadmap
         table.table.roadmap
