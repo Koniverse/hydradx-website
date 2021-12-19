@@ -233,6 +233,13 @@
     }
 }
 
+.label-dropdown-item {
+    &.label-active {
+        color: var(--primray-color);
+        border-bottom: 2px solid;
+    }
+}
+
 .menu-item-btn {
     display: flex;
     align-items: center;

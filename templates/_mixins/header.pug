@@ -1,7 +1,8 @@
 mixin header
     - var active = (name) => templateName === name ? 'active' : ''
+    - var labelActive = (nameArr, name) => nameArr.includes(templateName) || templateName === name ? 'label-active' : ''
+    - var childrenActive = (name) => templateName === name ? 'children-active' : ''
     - var extractTemplateName = (url) => {if (url === '/') return 'index'; return url ? url.replace('/', '').replace('.html', '') : ''};
-
     .hdx-top-header-contribute
         .hdx-top-header-contribute__text The HydraDX Crowdloan is Live.
         .btn.btn__sm.contribute-button Contribute Now
@@ -10,16 +11,17 @@ mixin header
             img(src=url('/images/logo-pink-darkblue.svg'))
         ul.header__menu
             each item in header.menu
-                li.menu-item
+                li.menu-item(class=`${item.text}-selector`)
                     .menu-item-btn
-                        a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
                         if item.dropdown
+                            .label-dropdown-item(class=labelActive(item.childrenArr, extractTemplateName(item.url)))=__(item.text)
                             img.menu-item__arrow-down(src=url('/images/pink-arrow-down.svg'))
-                    if item.dropdown
-                        ul.dropout-menu
-                            each childItem in item.dropdownItem
-                                a.dropout-menu-link(href=url(childItem.url) target='_blank')
-                                    li.dropout-menu-item=childItem.text
+                            ul.dropout-menu(class=`${item.text}-menu`)
+                                each childItem in item.dropdownItem
+                                    a.dropout-menu-link(href=url(childItem.url) class=childrenActive(extractTemplateName(childItem.url)) target='')
+                                        li.dropout-menu-item=childItem.text
+                        else
+                            a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
         .header-social-media-container
             .header-social-media-text Get in touch
             .header-social-media-list

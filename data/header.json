@@ -4,6 +4,10 @@
       "text": "about",
       "url": "/",
       "dropdown": true,
+      "childrenArr": [
+        "tokenomics",
+        "democracy"
+      ],
       "dropdownItem": [
         {
           "url": "/tokenomics.html",
