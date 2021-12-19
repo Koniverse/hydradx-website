@@ -9,4 +9,14 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .div tokenomics
+    .container.px-0
+        .header-background
+        .hdx-t-top-content-text.h-text-transform-uppercase.fz-48.text-center.ff-sans-hl.p-color Powering HydraDX (HDX) Token
+        .fz-18.text-center HDX is a native token of HydraDX. It will be used for governance, staking and more. We will disclose more details when our model is validated.
+        .row
+            .col-lg-6
+                .hdx-t-info-box-title What can I use HDX for ?
+            .col-lg-6
+                .hdx-t-info-box-title How can I earn HDX ?
+        .tokenomics-chart
+            canvas#chartPic(width='840' height='440')

@@ -1,17 +1,17 @@
 .page-index {
   .header-background {
-    background-size: contain;
-    background-image: url("./images/new-header-background.png");
-    background-repeat: no-repeat;
-    display: flow-root;
-    height: 1360px;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top: 56px;
-    left: 0;
-    min-width: $min-width;
-  }
+       background-size: contain;
+       background-image: url("./images/new-header-background.png");
+       background-repeat: no-repeat;
+       display: flow-root;
+       height: 1360px;
+       position: absolute;
+       z-index: -1;
+       width: 100%;
+       top: 56px;
+       left: 0;
+       min-width: $min-width;
+     }
 
   .hdx-top-content-container {
     margin-top: 64px;

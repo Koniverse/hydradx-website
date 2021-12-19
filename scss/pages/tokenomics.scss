@@ -1,0 +1,27 @@
+.page-tokenomics {
+  .header-background {
+    background-size: contain;
+    background-image: url("./images/tokenomic-header-bg.png");
+    background-repeat: no-repeat;
+    display: flow-root;
+    height: 993px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    min-width: $min-width;
+  }
+
+  .hdx-t-info-box-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--primray-color);
+    text-shadow: 0px 0px 10px rgba(246, 83, 162, 0.81);
+    text-transform: uppercase;
+  }
+
+  .tokenomics-chart {
+    width: 840px;
+  }
+}
