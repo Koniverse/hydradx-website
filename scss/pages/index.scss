@@ -1,6 +1,6 @@
 .page-index {
   .header-background {
-       background-size: contain;
+       background-size: 100% auto;
        background-image: url("./images/new-header-background.png");
        background-repeat: no-repeat;
        display: flow-root;
@@ -78,11 +78,11 @@
   }
 
   .hdx-home-info-box-item:first-child {
-    padding-left: 0 !important;
+    padding-right: 5px;
   }
 
   .hdx-home-info-box-item:last-child {
-    padding-right: 0;
+    padding-left: 5px;
   }
 
   .hdx-about-hydradx-title {
@@ -227,6 +227,11 @@
     padding: 0 1em;
   }
 
+  .hdx-universe-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
   table.table.roadmap {
     margin-bottom: 5em;
     margin-top: 2em;
@@ -325,6 +330,10 @@
     margin-top: 52px;
   }
 
+  .hdx-video-and-podcast-title {
+    text-decoration: none;
+  }
+
   @media (max-width: 1489px) {
     .hdx-universe-img {
       width: 1130px;
@@ -404,6 +413,10 @@
       padding: 0 90px;
     }
 
+    .hdx-chart-1 {
+      margin-left: 0;
+    }
+
     .hdx-hydradx1-infographic__text {
       padding: 28px 45px 0;
     }
@@ -415,6 +428,7 @@
 
     .hdx-more-information-item__title {
       text-align: center;
+      padding-right: 0;
     }
 
     .hdx-the-teams-behind-content-text {
@@ -470,7 +484,7 @@
       width: 720px;
     }
 
-    .hdx-home-info-box-item {
+    .hdx-home-info-box-item:first-child, .hdx-home-info-box-item:last-child {
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 18px;
@@ -485,12 +499,20 @@
       height: 120px;
     }
 
+    .hdx-teams-behind-container {
+      height: 725px;
+    }
+
     .hdx-the-teams-behind-content-text {
       margin: 0 80px;
     }
 
     .hdx-investor-and-backer-logo {
       margin-left: 100px;
+    }
+
+    .members img {
+      margin: 2em 3em;
     }
   }
 
@@ -502,7 +524,43 @@
     }
 
     .hdx-universe-img {
-      width: 550px;
+      width: 545px;
+    }
+
+    .hdx-chart-1 {
+      width: 500px;
+    }
+
+    .hdx-hydradx1-infographic {
+      height: auto;
+      width: 525px;
+    }
+
+    .hdx-hydradx2-infographic {
+      height: auto;
+      width: 525px;
+    }
+
+    .hdx-about-hydradx-title {
+      margin: 0;
+    }
+
+    .hdx-the-teams-behind-content-text {
+      margin: 0;
+    }
+
+    .hdx-investor-and-backer-logo {
+      margin-left: 60px;
+      width: 128px;
+    }
+
+    .hdx-video-and-podcast-header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hdx-video-and-podcast-btn {
+      margin-top: 20px;
     }
   }
 
@@ -513,12 +571,41 @@
       height: 300px;
     }
 
+    .hdx-universe-img {
+      width: 480px;
+    }
+
+    .hdx-chart-1 {
+      width: 400px;
+    }
+
+    .hdx-hydradx1-infographic, .hdx-hydradx2-infographic {
+      width: 445px;
+    }
+
     .join-hydration {
       margin-top: 30px;
     }
 
     .community {
       margin-top: 34px;
+    }
+
+    .hdx-teams-behind-container {
+      height: 575px;
+    }
+
+    .hdx-team-logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .hdx-investor-and-backer-logo {
+      width: 110px;
+    }
+
+    .hdx-info-graphic {
+      height: 400px;
     }
   }
 
@@ -528,6 +615,18 @@
       top: -22px;
       height: 500px;
       width: 500px;
+    }
+
+    .hdx-universe-img {
+      width: 350px;
+    }
+
+    .hdx-chart-1 {
+      width: 350px;
+    }
+
+    .hdx-hydradx1-infographic, .hdx-hydradx2-infographic {
+      width: 350px;
     }
   }
 }

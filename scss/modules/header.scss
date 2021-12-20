@@ -203,6 +203,7 @@
             li {
                 display: block;
                 font-size: 28px;
+                margin-left: 0;
             }
         }
 
@@ -230,6 +231,7 @@
         padding-top: 7em;
 
         &__menu {
+            margin-top: 80px;
             width: 100%;
             text-align: left;
         }
@@ -251,6 +253,8 @@
 
 .menu-item__arrow-down {
     padding-left: 6px;
+    width: 14px;
+    height: 14px;
 }
 
 .header-mobile {
@@ -319,5 +323,31 @@
         &__logo {
             width: 150px;
         }
+    }
+}
+
+@media (max-width: breakpoint-max('xl')) {
+    .header-social-media-container {
+        justify-content: center;
+    }
+
+    .header-social-media-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: breakpoint-min('md')) {
+    .hdx-top-header-contribute__text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+    .hdx-top-header-contribute {
+        flex-direction: column;
+    }
+
+    .hdx-top-header-contribute__text {
+        font-size: 18px;
     }
 }

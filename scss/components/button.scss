@@ -50,6 +50,12 @@
     }
   }
 
+  @media (max-width: breakpoint-min('md')) {
+    &__sm {
+      font-size: 16px;
+    }
+  }
+
   @media (max-width: breakpoint-min(sm)) {
     &__lg {
       padding: 0.4em 2em;

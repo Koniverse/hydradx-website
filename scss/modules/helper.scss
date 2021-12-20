@@ -125,3 +125,25 @@
         line-height: 20px;
     }
 }
+
+@media (max-width: breakpoint-min('md')) {
+    .fz-48 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+    .fz-40 {
+        font-size:32px;
+        line-height: 40px;
+    }
+
+    .fz-24 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .fz-20 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
