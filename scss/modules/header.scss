@@ -33,7 +33,10 @@
 }
 
 .header-social-media-container {
-
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
 
 .header-social-media-text {
@@ -66,11 +69,11 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 5em;
+    padding: 1em 48px;
     align-items: center;
 
     &__logo {
-        flex: 0 0 25%;
+        flex: 1;
         text-align: left;
         img {
             width: 80px;
@@ -78,7 +81,7 @@
     }
 
     &__actions {
-        flex: 0 0 25%;
+        flex: 1;
         display: flex;
         justify-content: flex-end;
         align-content: center;
@@ -234,6 +237,7 @@
 }
 
 .label-dropdown-item {
+    cursor: pointer;
     &.label-active {
         color: var(--primray-color);
         border-bottom: 2px solid;

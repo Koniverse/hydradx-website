@@ -9,14 +9,67 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .container.px-0
+    .hdx-t-top-content-container.container.px-0
         .header-background
-        .hdx-t-top-content-text.h-text-transform-uppercase.fz-48.text-center.ff-sans-hl.p-color Powering HydraDX (HDX) Token
-        .fz-18.text-center HDX is a native token of HydraDX. It will be used for governance, staking and more. We will disclose more details when our model is validated.
+        .hdx-t-content-box
+            .hdx-t-top-content-title.hdx-t-content-title.ff-sans-hl Powering HydraDX (HDX) Token
+            .hdx-t-top-content-text.fz-18.text-center HDX is a native token of HydraDX. It will be used for governance, staking and more. We will disclose more details when our model is validated.
         .row
             .col-lg-6
                 .hdx-t-info-box-title What can I use HDX for ?
+                each reasonUseHdx in tokenomics.useHdxFor
+                    +hdx-text-with-arrow(reasonUseHdx)
             .col-lg-6
                 .hdx-t-info-box-title How can I earn HDX ?
-        .tokenomics-chart
-            canvas#chartPic(width='840' height='440')
+                each howToEarn in tokenomics.earnHdx
+                    +hdx-text-with-arrow(howToEarn)
+                .hdx-t-more-information-btn.btn.btn__md More Information
+    .hdx-t-middle-content-container
+        .container.px-0
+            .hdx-t-content-title.ff-sans-hl HDX Tokenomics
+            .hdx-t-text-container
+                span.fz-18.text-center HDX is a utility token with a fixed supply of
+                span.p-color  10,000,000,000
+                span.fz-18.text-center . The entire supply will be minted in the genesis block at launch.
+            .hdx-t-info-row.row.px-0
+                each hdxTokenomicsR1 in tokenomics.hdxTokenomicsRow1
+                    .col-lg-4
+                        +hdx-info-box-with-header(hdxTokenomicsR1.title, hdxTokenomicsR1.text)
+            .hdx-t-info-row.row.px-0
+                each hdxTokenomicsR2 in tokenomics.hdxTokenomicsRow2
+                    .col-lg-4
+                        +hdx-info-box-with-header(hdxTokenomicsR2.title, hdxTokenomicsR2.text)
+            .hdx-t-content-title.hdx-t-token-allocation.ff-sans-hl Token Allocation
+            .hdx-t-text-container
+                span.fz-18.text-center The tokenomics is in an advanced stage of being formalized. Given that HDX has some unique properties, the team, along with our partners at
+                span.fz-18.text-center.p-color  Blockscience
+                span.fz-18.text-center , are making sure that every detail and edge-case scenario is covered. Note, that the whole project is very long-term oriented so one can expect that the parameters will be aligned with such ambitions.
+            .row
+                .col-lg-6
+                    .hdx-t-info-box-title Current token allocation
+                    each currentToken in tokenomics.currentTokenAllocation
+                        +hdx-text-with-arrow(currentToken)
+                .col-lg-6
+                    .hdx-t-info-box-title New Token Allocation
+                    each newToken in tokenomics.newTokenAllocation
+                        +hdx-text-with-arrow(newToken)
+        img.hdx-t-current-and-new-tokenomics-chart(src=url('/images/current-and-new-tokenomics-chart.png'))
+        .hdx-t-text-container
+            span.fz-18.text-center See more details in the the blogpost
+            span.fz-18.text-center.p-color  "Referendum to Triple HDX Balances"
+    .hdx-t-bottom-content-container
+        .container
+            .hdx-t-content-title.ff-sans-hl What is the token vesting schedule?
+            .hdx-t-token-vesting-schadule-wrapper
+                .hdx-t-token-vesting-schadule-item
+                    +hdx-text-with-arrow('Investors have a vesting period of 18 months, with gradual unlocking, starting at the mainnet launch.')
+                .hdx-t-token-vesting-schadule-item
+                    +hdx-text-with-arrow('The team and founders are vested for 18 months, starting 6 months after the mainnet launch with gradual unlocking (24 months total).')
+
+            .tokenomics-chart-wrapper
+                .hdx-t-bottom-text-container
+                    span.fz-20.h-text-transform-uppercase.p-color.p-shadow BSX Supply unlock projection
+                    span.fz-18 (monthly, 24 months from mainet)
+
+                .tokenomics-chart
+                    canvas#chartPic(width='920' height='440')

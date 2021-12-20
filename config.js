@@ -3,6 +3,7 @@ const footerLinks = require('./data/footerLinks.json');
 const roadmap = require('./data/roadmap.json');
 const header = require('./data/header.json');
 const about = require('./data/about.json');
+const tokenomics = require('./data/tokenomics.json');
 
 module.exports = {
     baseUrl: 'https://web3vietnam.github.io/',
@@ -18,5 +19,6 @@ module.exports = {
     footerLinks,
     roadmap,
     header,
-    about
+    about,
+    tokenomics
 };

@@ -100,6 +100,28 @@
 
     &:hover {
         color: var(--primray-color);
-        border-bottom: 1px solid;
+        border-bottom: 2px solid;
+    }
+}
+
+@media (max-width: 1490px) {
+    .fz-48 {
+        font-size: 44px;
+        line-height: 58px;
+    }
+
+    .fz-40 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .fz-24 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .fz-20 {
+        font-size: 18px;
+        line-height: 20px;
     }
 }

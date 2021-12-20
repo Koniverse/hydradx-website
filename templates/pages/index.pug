@@ -11,11 +11,11 @@ block append head
 block content
     .container.px-0
         .header-background
-        .hdx-top-content-container.row
-            .col-lg-6
-                .hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is a cross-chain liquidity protocol built on
-                .hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Substrate
-            .col-lg-6
+        .hdx-top-content-container.row.px-0
+            .hdx-top-content-item.col-lg-6
+                span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is a cross-chain liquidity protocol built on
+                span.hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Substrate
+            .hdx-top-content-item.hdx-top-content.col-lg-6
                 each aboutHdxInfo in about.aboutHydradx
                     +hdx-text-with-arrow(aboutHdxInfo)
                 .btn.btn__lg.hdx-about-hydradx-subscribe-btn Subscribe
@@ -24,22 +24,22 @@ block content
     .hdx-midle-content-container
         .container.hdx-about-hydradx-advantages-container
             .hdx-about-hydradx-advantages.row
-                .col-lg-6.px-0
+                .hdx-about-hydradx-advantage.col-lg-6.px-0
                     img.hdx-chart-1(src=url('/images/hydradx-chart1.png'))
-                .col-lg-6.px-0
-                    .hdx-about-hydradx-content-title.fz-40.p-color.ff-sans-hl Frictionless liquidity for all crypto-assets
+                .hdx-about-hydradx-advantage.col-lg-6.px-0
+                    .hdx-about-hydradx-advantage__title.hdx-about-hydradx-content-title.fz-40.p-color.ff-sans-hl Frictionless liquidity for all crypto-assets
                     .hdx-home-info-box.row
                             each infoAboutHdx in about.informationAboutHydraDx
                                 .hdx-home-info-box-item.col-lg-6
                                     +hdx-info-box(infoAboutHdx.title, infoAboutHdx.text)
             .hdx-about-hydradx-title.fz-40.p-color.ff-sans-hl Enable global permissionless finance with Multi-Chain
             .row
-                .col-lg-6.px-0
+                .hdx-hydradx1-infographic-wrapper.col-lg-6.px-0
                     .hdx-info-graphic
                         img.hdx-hydradx1-infographic(src=url('/images/hydradx1.png'))
                     .hdx-hydradx1-infographic__title.fz-20.p-color.p-shadow.text-center NATIVE LIQUIDITY FOR POLKADOT ECOSYSTEM
                     .hdx-hydradx1-infographic__text.text-center HydraDX is a natural swap solution for all assets built on Substrate and in the fast-growing Polkadot ecosystem – a place to bootstrap liquidity.
-                .col-lg-6.px-0
+                .hdx-hydradx1-infographic-wrapper.col-lg-6.px-0
                     .hdx-info-graphic
                         img.hdx-hydradx2-infographic(src=url('/images/hydradx2.png'))
                     .hdx-hydradx1-infographic__title.fz-20.p-color.p-shadow.text-center CROSS-CHAIN LIQUIDITY PROTOCOL
@@ -48,9 +48,9 @@ block content
     .hdx-more-information-container
         .container
             .row
-                .col-lg-6.px-0
-                    .fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase HydraDX is build to support various financial applications and optimized for DeFi use cases.
-                .col-lg-6.px-0
+                .hdx-more-information-item.col-lg-6.px-0
+                    .hdx-more-information-item__title.fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase HydraDX is build to support various financial applications and optimized for DeFi use cases.
+                .hdx-more-information-item.col-lg-6.px-0
                     each hdxAdvantage in about.advantages
                         +hdx-text-with-arrow(hdxAdvantage)
         +hdx-right-body-icon
@@ -89,26 +89,27 @@ block content
                 .btn.btn__md.h-text-transform-uppercase view more videos
             .row.px-0
                 .col-lg-4
-                    iframe.hdx-video-wrapper(width='450' height='250' src='https://www.youtube.com/embed/SjD6EzghWlM')
+                    iframe.hdx-video-wrapper(src='https://www.youtube.com/embed/SjD6EzghWlM')
                     .fz-20.p-color.h-text-transform-uppercase.p-shadow Parachain Auctions Podcast: Basilisk, ‘King of Serpents’, Looking to be Crowned...
                     .hdx-video-and-podcast-text In this episode, Brian Hoffman speaks with Matti Gagliardi and Jakub Panik from HydraDX about their Kusama project Basilisk
                 .col-lg-4
-                    iframe.hdx-video-wrapper(width='450' height='250' src='https://www.youtube.com/embed/av5QUhuByQ8')
+                    iframe.hdx-video-wrapper(src='https://www.youtube.com/embed/av5QUhuByQ8')
                     .fz-20.p-color.h-text-transform-uppercase.p-shadow The ‘King of Serpents', Basilisk, Crowned with Parachain Slot Number Eight!
                     .hdx-video-and-podcast-text On today's episode, Brian touches base with Jakub Gregus, co-founder of HydraDX and their Kusama project Basilisk.
                 .col-lg-4
-                    iframe.hdx-video-wrapper(width='450' height='250' src='https://www.youtube.com/embed/Iz1lfVyAKQ0')
+                    iframe.hdx-video-wrapper(src='https://www.youtube.com/embed/Iz1lfVyAKQ0')
                     .fz-20.p-color.h-text-transform-uppercase.p-shadow Sub0 Online: Basilisk's Take on Existential Deposits in a Multi Asset World
                     .hdx-video-and-podcast-text What is an existential deposit, why is it important and how can it be addressed in a multi chain universe.
     .hdx-start-building-with-us-container
         h1.headline-2 Start buiding with us
-        .hdx-start-building-with-us-background.row
-            .col-xl-4.d-none.d-xl-block
-            .col-xl-4.text-center.join-hydration
-                .weird-stroke
-                a.btn.btn__lg(href='#') Join Hydration
-            .col-xl-4.community
-                +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
+        .hdx-start-building-with-us-background-container
+            .hdx-start-building-with-us-background.row
+                .col-xl-4.d-none.d-xl-block
+                .col-xl-4.text-center.join-hydration
+                    .weird-stroke
+                    a.btn.btn__lg(href='#') Join Hydration
+                .col-xl-4.community
+                    +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
     .container.px-3
         h1.headline-2 Roadmap
         table.table.roadmap

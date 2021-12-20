@@ -23,10 +23,11 @@ mixin header
                         else
                             a(href=url(item.url, locale) class=active(extractTemplateName(item.url)) target=item.target)=__(item.text)
         .header-social-media-container
-            .header-social-media-text Get in touch
-            .header-social-media-list
-                each network in header.socialNetwork
-                    +hdx-social-media-btn(network.name, network.color)
+            .header-social-media-wrapper
+                .header-social-media-text Get in touch
+                .header-social-media-list
+                    each network in header.socialNetwork
+                        +hdx-social-media-btn(network.name, network.color)
 
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
