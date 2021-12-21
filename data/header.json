@@ -2,20 +2,70 @@
   "menu": [
     {
       "text": "about",
-      "url": "/"
+      "url": "/#",
+      "dropdown": true,
+      "childrenArr": [
+        "tokenomics",
+        "democracy"
+      ],
+      "dropdownItem": [
+        {
+          "url": "/tokenomics.html",
+          "text": "Tokenomics"
+        },
+        {
+          "url": "/democracy.html",
+          "text": "Democracy"
+        }
+      ]
     },
     {
-      "text": "docs",
+      "text": "network",
       "url": "/#",
+      "dropdown": false,
       "target": "_blank"
     },
     {
-      "text": "basilisk",
-      "url": "/basilisk.html"
+      "text": "dummies",
+      "url": "/#",
+      "dropdown": false,
+      "target": "_blank"
     },
     {
-      "text": "joinHydration",
-      "url": "/join-hydration.html"
+      "text": "grants & bouties",
+      "url": "/#",
+      "dropdown": false,
+      "target": "_blank"
+    },
+    {
+      "text": "new letter",
+      "url": "/#",
+      "dropdown": false,
+      "target": "_blank"
+    },
+    {
+      "text": "faq",
+      "url": "/#",
+      "dropdown": false,
+      "target": "_blank"
+    }
+  ],
+  "socialNetwork": [
+    {
+      "name": "Twitter",
+      "color": "twitter-color"
+    },
+    {
+      "name": "Github",
+      "color": "github-color"
+    },
+    {
+      "name": "Telegram",
+      "color": "telegram-color"
+    },
+    {
+      "name": "Discord",
+      "color": "discord-color"
     }
   ],
   "languages": {

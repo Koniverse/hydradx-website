@@ -7,6 +7,9 @@ body {
   @media (max-width: breakpoint-min('xl')) {
     &.no-scrolling {
       overflow-y: hidden;
+    }
+
+    &.position-fixed {
       position: fixed; // fix for ios devices
     }
 

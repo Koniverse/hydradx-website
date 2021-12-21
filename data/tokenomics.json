@@ -1,0 +1,55 @@
+{
+  "useHdxFor": [
+    "To minimize the trading fee cost",
+    "For staking (PoS)",
+    "Holders of HDX will have lower over-collateralization ratio",
+    "Swag"
+  ],
+  "earnHdx": [
+    "Provide liquidity and be rewarded by earning HDX.",
+    "Buy on HydraDX mainnet.",
+    "Stake HDX and earn even more HDX",
+    "Support ecosystem by taking part in bounties and getting paid from treasury"
+  ],
+  "hdxTokenomicsRow1": [
+    {
+      "title": "Ticker",
+      "text": "hdx"
+    },
+    {
+      "title": "Relay Chain",
+      "text": "polkadot"
+    },
+    {
+      "title": "Max Supply",
+      "text": "10.000.000.000"
+    }
+  ],
+  "hdxTokenomicsRow2": [
+    {
+      "title": "Inflation",
+      "text": "0%"
+    },
+    {
+      "title": "Supply Profile",
+      "text": "fixed & deflationary"
+    },
+    {
+      "title": "Supply at Genesis",
+      "text": "10.000.000.000"
+    }
+  ],
+  "currentTokenAllocation": [
+    "10b is the total supply",
+    "15% Founders, Investors & Advisors",
+    "5% LBP (proceeds will be used as a bootstrap for native liquidity on HydraDX Omnipool)",
+    "5% Incentivized Stakenet (bounties, staking rewards, etc. during Stakenet)",
+    "75% liquidity provision and staking rewards."
+  ],
+  "newTokenAllocation": [
+    "15% Founders, Investors & Advisors",
+    "15% LBP (proceeds will be used as a bootstrap for native liquidity on HydraDX Omnipool)",
+    "5% Incentivized Stakenet (bounties, staking rewards, etc. during Stakenet)",
+    "65% liquidity provision and staking rewards."
+  ]
+}

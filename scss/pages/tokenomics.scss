@@ -1,0 +1,250 @@
+.page-tokenomics {
+  .header-background {
+    background-image: url("./images/tokenomic-header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flow-root;
+    height: 993px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    min-width: $min-width;
+  }
+
+  .hdx-t-content-box {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .hdx-t-top-content-title {
+    margin-bottom: 22px;
+  }
+
+  .hdx-t-top-content-text {
+    max-width: 879px;
+  }
+
+  .hdx-t-content-title {
+    color: var(--primray-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 280px;
+  }
+
+  .hdx-t-info-box-title {
+    color: var(--primray-color);
+    text-shadow: 0px 0px 10px rgba(246, 83, 162, 0.81);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .hdx-t-top-content-container {
+    margin-bottom: 182px;
+  }
+
+  .hdx-t-more-information-btn {
+    margin-top: 40px;
+  }
+
+  .hdx-t-info-row {
+    margin-bottom: 50px;
+  }
+
+  .hdx-t-tokenomics-item {
+    padding-right: 30px;
+  }
+
+  .hdx-t-tokenomics-item:last-child {
+    padding-right: 0;
+  }
+
+  .tokenomics-chart {
+
+  }
+
+  .hdx-t-current-and-new-tokenomics-chart {
+    width: 1415px;
+    margin-top: 95px;
+  }
+
+  .hdx-t-middle-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+  }
+
+  .hdx-t-middle-content-container .hdx-left-body-icon-container {
+    position: absolute;
+    left: 0;
+    top: -78px;
+  }
+
+  .hdx-t-middle-content-container .hdx-right-body-icon-container {
+    position: absolute;
+    right: 0;
+    top: 420px;
+  }
+
+  .hdx-t-text-container {
+    margin: 12px 240px 60px;
+    text-align: center;
+  }
+
+  .hdx-t-token-allocation {
+    margin-top: 170px;
+  }
+
+  .hdx-t-bottom-content-container {
+    background: linear-gradient(0.45deg, #0D106E -2.53%, #0B0D56 102.77%);
+    padding-top: 110px;
+  }
+
+  .hdx-t-token-vesting-schadule-wrapper {
+    display: flex;
+    margin: 90px 124px;
+  }
+
+  .hdx-t-token-vesting-schadule-item {
+    flex: 1;
+  }
+
+  .hdx-t-token-vesting-schadule-item:last-child {
+    margin-left: 40px;
+  }
+
+  .hdx-t-bottom-text-container {
+    margin-bottom: 20px;
+  }
+
+  .tokenomics-chart-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: breakpoint-min('xxl')) {
+    .hdx-info-box-with-header__text {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .hdx-t-current-and-new-tokenomics-chart {
+      width: 1145px;
+    }
+
+    .hdx-t-current-and-new-token-item {
+      width: 100%;
+      margin-bottom: 70px;
+      padding: 0 150px;
+    }
+
+    .hdx-t-info-box-title {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .hdx-t-text-container {
+      margin: 12px 150px 60px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('xl')) {
+    .hdx-info-box-with-header__header {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    .hdx-info-box-with-header__text {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .hdx-t-content-title {
+      margin: 0 180px;
+    }
+
+    .hdx-t-text-container {
+      margin: 12px 140px 60px;
+    }
+
+    .hdx-t-current-and-new-tokenomics-chart {
+      width: 945px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('lg')) {
+
+    .header-background {
+      height: 1100px;
+    }
+
+    .hdx-t-content-title {
+      margin: 0 80px;
+    }
+
+    .hdx-t-text-container {
+      margin: 12px 40px 60px;
+    }
+
+    .hdx-t-top-content-info-box-item {
+      margin-bottom: 40px;
+    }
+
+    .hdx-t-more-information-btn-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hdx-t-current-and-new-token-item {
+      padding: 0 45px;
+    }
+
+    .hdx-t-tokenomics-item, .hdx-t-tokenomics-item:last-child {
+      padding: 20px 40px;
+    }
+
+    .hdx-t-current-and-new-tokenomics-chart {
+      width: 745px;
+    }
+
+    .hdx-info-box-with-header__header {
+      padding: 10px 20px;
+    }
+
+    .hdx-info-box-with-header__text {
+      padding: 40px 10px;
+    }
+
+    .hdx-t-token-vesting-schadule-wrapper {
+      flex-direction: column;
+      margin: 90px 30px;
+    }
+
+    .hdx-t-token-vesting-schadule-item:last-child {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    .tokenomics-chart {
+
+    }
+  }
+
+  @media (max-width: breakpoint-min('md')) {
+    .hdx-t-current-and-new-tokenomics-chart {
+      width: 400px;
+    }
+
+    .hdx-t-middle-content-container .hdx-left-body-icon-container,
+    .hdx-t-middle-content-container .hdx-right-body-icon-container {
+      display: none;
+    }
+  }
+}

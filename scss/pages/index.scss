@@ -1,79 +1,240 @@
 .page-index {
   .header-background {
-    background-size: contain;
-    background-image: url("./images/header-background.png");
+       background-size: 100% auto;
+       background-image: url("./images/new-header-background.png");
+       background-repeat: no-repeat;
+       display: flow-root;
+       height: 1360px;
+       position: absolute;
+       z-index: -1;
+       width: 100%;
+       top: 56px;
+       left: 0;
+       min-width: $min-width;
+     }
+
+  .hdx-top-content-container {
+    margin-top: 64px;
+  }
+
+  .hdx-top-content-item:first-child {
+    padding-right: 50px;
+  }
+
+  .hdx-about-hydradx-content-title {
+    text-transform: uppercase;
+  }
+
+  .hdx-about-hydradx-content-title-button {
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--text-color);
+    width: fit-content;
+    margin-left: 10px;
+  }
+
+  .hdx-about-hydradx-subscribe-btn {
+    line-height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 34px;
+  }
+
+  .hdx-universe-img {
+    margin: 59px 0;
+    width: 1330px;
+  }
+
+  .hdx-transform-background {
+    background: linear-gradient(180deg, rgba(13, 16, 110, 0) 1.06%, #0D106E 100%);
+    height: 70px;
+  }
+
+  .hdx-midle-content-container {
+    background: linear-gradient(180deg, #0D106E 8.29%, #0B0D56 76.59%);
+    margin-top: -10px;
+    position: relative;
+  }
+
+  .hdx-midle-content-container .hdx-left-body-icon-container {
+    position: absolute;
+    left: 0;
+    bottom: -86px;
+  }
+
+  .hdx-about-hydradx-advantages-container {
+    padding-bottom: 150px;
+  }
+
+  .hdx-about-hydradx-advantages {
+    margin-bottom: 125px;
+  }
+
+  .hdx-chart-1 {
+    margin-left: -28px;
+    width: 704px;
+  }
+
+  .hdx-home-info-box {
+    margin-top: 52px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hdx-home-info-box-item:first-child {
+    padding-right: 5px;
+  }
+
+  .hdx-home-info-box-item:last-child {
+    padding-left: 5px;
+  }
+
+  .hdx-about-hydradx-title {
+    margin: 0 370px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .hdx-info-graphic {
+    display: flex;
+    height: 600px;
+    align-items: center;
+  }
+
+  .hdx-hydradx1-infographic__title {
+    padding: 0 220px;
+  }
+
+  .hdx-hydradx1-infographic__text {
+    padding: 28px 98px 0 98px;
+  }
+
+  .hdx-hydradx1-infographic {
+    width: 597px;
+    height: 582px;
+  }
+
+  .hdx-hydradx2-infographic {
+    width: 627px;
+    height: 421px;
+  }
+
+  .hdx-more-information-container {
+    margin-top: 130px;
+    position: relative;
+  }
+
+  .hdx-roadmap {
+    position: relative;
+  }
+
+  .hdx-more-information-container .hdx-right-body-icon-container {
+    position: absolute;
+    right: 0;
+    top: 263px;
+  }
+
+  .hdx-roadmap .hdx-right-body-icon-container {
+    position: absolute;
+    right: 0;
+    bottom: 195px;
+  }
+
+  .hdx-teams-behind-container {
+    background-size: 100% auto;
+    background-image: url("./images/home-background.png");
     background-repeat: no-repeat;
     display: flow-root;
-    height: 1375px;
-    position: absolute;
+    height: 795px;
     z-index: -1;
     width: 100%;
-    top: 0;
-    left: 0;
     min-width: $min-width;
+    background-position: center bottom;
+    padding-top: 125px;
+  }
 
-    @media (max-width: breakpoint-min('xl')) {
-      background-size: cover;
-      background-position-x: right;
-      height: 975px;
-      top: -80px;
+  .hdx-teams-behind-logo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: var(--bgc);
-        opacity: 0.5;
-      }
+  .hdx-team-logo {
+    width: 240px;
+    height: 240px;
+  }
+
+
+  //.hdx-investor-and-backer-logo {
+  //  width: 156px;
+  //  height: 70px;
+  //  margin-left: 116px;
+  //}
+
+  .hdx-the-teams-behind-content-text {
+    margin: 0 280px;
+  }
+
+  .hdx-teams-behind-logo {
+    margin-top: 60px;
+
+  }
+
+  .hdx-investor-and-backer-container {
+    margin-top: 140px;
+    display: flex;
+    margin-bottom: 175px;
+  }
+
+  .hdx-investor-and-backer-left-content {
+    flex: 1;
+  }
+
+  .hdx-investor-and-backer-right-content {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hdx-investor-and-backer-title {
+    margin-bottom: 32px;
+    padding-right: 70px;
+  }
+
+  .board-info {
+    margin-top: 300px;
+  }
+
+  .members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      margin: 0.2em 3em;
     }
   }
 
-  .section-1 {
-    margin: 6em auto;
-
-    @media (max-width: breakpoint-min('lg')) {
-      margin: 3em auto;
-
-      .section-1-info-box {
-        margin: 0;
-
-        .info-box {
-          margin: 0 0 2em 0;
-        }
-      }
-    }
-
-    @media (max-width: breakpoint-min('sm')) {
-      img.hydradx {
-        max-width: 300px;
-      }
-    }
+  .hdx-video-and-podcast-container {
+    background: linear-gradient(180deg, #0D106E 8.29%, #0B0D56 76.59%);
+    padding: 110px 0;
   }
 
-  img.hydradx {
-    max-width: 600px;
+  .hdx-video-and-podcast-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
   }
 
-  .headline-1 {
-    color: var(--primray-color);
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 1205px;
-    margin-left: auto;
-    margin-right: auto;
+  .hdx-video-wrapper {
+    width: 100%;
+    height: 250px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0px 0px 40px rgba(94, 175, 225, 0.6);
   }
 
-  .section-1-info-box {
-    max-width: 960px;
-    margin: 4em auto;
-
-    .info-box {
-      margin: 15px;
-    }
+  .hdx-video-and-podcast-text {
+    margin-top: 12px;
   }
 
   .headline-2 {
@@ -83,207 +244,9 @@
     padding: 0 1em;
   }
 
-  .section-2 {
-    margin-bottom: 10em;
-
-    @media (max-width: breakpoint-min('xl')) {
-      margin-bottom: 7em;
-    }
-
-    @media (max-width: breakpoint-min('sm')) {
-      margin-bottom: 6em;
-    }
-  }
-
-  .section-2-building-with-us {
-    position: relative;
-    margin-top: 4em;
-
-    @media (max-width: breakpoint-min('xl')) {
-      .join-hydration {
-        margin-bottom: 12em;
-      }
-
-      .community {
-        max-width: 900px;
-        margin: auto;
-      }
-    }
-
-    @media (max-width: breakpoint-min('sm')) {
-      .join-hydration {
-        text-align: right;
-      }
-    }
-  }
-
-  .weird-stroke {
-    background-image: url("./images/weird_stroke.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 765px;
-    position: absolute;
-    top: -50px;
-    left: -257px;
-    z-index: -1;
-
-    @media (max-width: breakpoint-min('xxl')) {
-      height: 590px;
-      left: -210px;
-      top: -33px;
-    }
-
-    @media (max-width: breakpoint-min('xl')) {
-      left: -280px;
-      top: -42px;
-    }
-
-    @media (max-width: breakpoint-min('lg')) {
-      left: -385px;
-      top: -50px;
-    }
-
-    @media (max-width: breakpoint-min('md')) {
-      left: -280px;
-      top: -5px;
-    }
-
-    @media (max-width: breakpoint-min('sm')) {
-      left: -230px;
-      top: -40px;
-      height: 600px;
-      width: 600px;
-    }
-
-    @media (max-width: 430px) {
-      left: -230px;
-      top: -22px;
-      height: 500px;
-      width: 500px;
-    }
-  }
-
-  .section-3 {
-    margin-top: 8em;
-    margin-bottom: 15em;
-    position: relative;
-
-    p.heading {
-      margin-top: 0;
-      color: var(--primray-color);
-      @extend .p-shadow;
-    }
-
-    span.text {
-      font-size: 20px;
-    }
-
-    .row-2 {
-      margin-top: 6em;
-    }
-
-    .box-2 {
-      margin-top: 4em;
-    }
-
-    .box-3 {
-      margin-top: 5em;
-    }
-
-    @media (max-width: breakpoint-min('xl')) {
-      margin-top: 0;
-      margin-bottom: 8em;
-
-      .weird-logo-circling {
-        position: static;
-        height: 300px;
-        background-size: 60%;
-      }
-
-      .box-2, .box-3 {
-        margin-top: 0;
-      }
-
-      .row-2 {
-        margin-top: 0;
-      }
-
-      .row {
-        margin-top: 0;
-        > div {
-          margin-bottom: 1.5em;
-        }
-      }
-
-      .info-box {
-        display: flex;
-        height: 100%;
-        align-items: center;
-      }
-    }
-
-    @media (max-width: breakpoint-min('lg')) {
-      margin-bottom: 5em;
-    }
-
-    @media (max-width: breakpoint-min('sm')) {
-      span.text {
-        font-size: 1em;
-      }
-
-      p.heading {
-        font-size: 1.1em;
-      }
-
-      .weird-logo-circling {
-        background-size: 100%;
-      }
-    }
-  }
-
-  .weird-logo-circling {
-    background-image: url("./images/logo-our-mission.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 912px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
-  .our-mission {
-    @media (max-width: breakpoint-min('sm')) {
-      .listing {
-        font-size: 1em;
-      }
-    }
-  }
-
-  .member-of {
-    margin-bottom: 4em;
-  }
-
-  .members {
+  .hdx-universe-img-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    img {
-      margin: 1.5em 3em;
-    }
-  }
-
-  .about-the-team {
-    max-width: 360px;
-    margin: 0 auto 5em auto;
-    font-size: 16px;
-
-    h2 {
-      margin-bottom: 1.5em;
-    }
   }
 
   table.table.roadmap {
@@ -340,5 +303,393 @@
         padding: 0.7em 1em;
       }
     }
+
+    .hdx-start-building-with-us-container {
+
+    }
+  }
+
+  .hdx-start-building-with-us-container {
+    margin-bottom: 200px;
+    margin-top: 100px;
+  }
+
+  .hdx-start-building-with-us-background-container {
+    position: relative;
+  }
+  .hdx-start-building-with-us-background {
+    background-size: contain;
+    background-image: url("./images/start-building-with-us-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    height: 451px;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .weird-stroke {
+    background-image: url("./images/weird_stroke.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 765px;
+    position: absolute;
+    top: -14px;
+    left: -5px;
+    z-index: -1;
+  }
+
+  .join-hydration {
+    margin-top: 44px;
+  }
+
+  .community {
+    margin-top: 52px;
+    max-width: 500px;
+  }
+
+  .hdx-video-and-podcast-title {
+    text-decoration: none;
+  }
+
+  @media (max-width: 1489px) {
+    .hdx-universe-img {
+      width: 1130px;
+    }
+
+    .hdx-chart-1 {
+      width: 565px;
+    }
+
+    .hdx-about-hydradx-title {
+      margin: 0 270px;
+    }
+
+    .hdx-hydradx1-infographic__title {
+      padding: 0 170px;
+    }
+
+    .hdx-more-information-container .hdx-right-body-icon-container {
+      top: 360px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('xxl')) {
+    .weird-stroke {
+      height: 590px;
+      left: -33px;
+      top: 0;
+    }
+  }
+
+  @media (max-width: breakpoint-min('xl')) {
+    .weird-stroke {
+      left: -185px;
+      top: 6px;
+    }
+
+    .hdx-top-content-item {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    .hdx-universe-img {
+      width: 955px;
+    }
+
+    .hdx-about-hydradx-advantage {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hdx-about-hydradx-advantage__title {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .hdx-about-hydradx-title {
+      margin: 0 170px;
+    }
+
+    .hdx-hydradx1-infographic-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hdx-hydradx1-infographic__title {
+      padding: 0 90px;
+    }
+
+    .hdx-chart-1 {
+      margin-left: 0;
+    }
+
+    .hdx-hydradx1-infographic__text {
+      padding: 28px 45px 0;
+    }
+
+    .hdx-more-information-item {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .hdx-more-information-item__title {
+      text-align: center;
+      padding-right: 0;
+    }
+
+    .hdx-the-teams-behind-content-text {
+      margin: 0 150px;
+    }
+
+    .hdx-team-logo {
+      width: 180px;
+      height: 180px;
+    }
+
+    .hdx-investor-and-backer-container {
+      flex-direction: column;
+    }
+
+    .hdx-investor-and-backer-left-content {
+      text-align: center;
+    }
+
+    .hdx-investor-and-backer-title {
+      text-align: center;
+      padding-right: 0;
+    }
+
+    .hdx-investor-and-backer-right-content {
+      margin-top: 50px;
+      justify-content: center;
+    }
+
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 180px;
+    //  margin-top: 20px;
+    //}
+
+    //.hdx-investor-and-backer-logo:first-child, .hdx-investor-and-backer-logo:nth-child(4) {
+    //  margin-left: 0;
+    //}
+
+    .community {
+      max-width: 500px;
+      margin: 160px auto 0;
+    }
+
+  }
+  @media (max-width: breakpoint-min('lg')) {
+    .weird-stroke {
+      height: 460px;
+      left: -106px;
+      top: 16px;
+    }
+
+    .hdx-universe-img {
+      width: 720px;
+    }
+
+    .hdx-home-info-box-item:first-child, .hdx-home-info-box-item:last-child {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 18px;
+    }
+
+    .hdx-about-hydradx-title {
+      margin: 0 70px;
+    }
+
+    .hdx-team-logo {
+      width: 120px;
+      height: 120px;
+    }
+
+    .hdx-teams-behind-container {
+      height: 725px;
+    }
+
+    .hdx-the-teams-behind-content-text {
+      margin: 0 80px;
+    }
+
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 100px;
+    //}
+
+    .members img {
+      margin: 2em 3em;
+    }
+  }
+
+  @media (max-width: breakpoint-min('md')) {
+    .weird-stroke {
+      left: -150px;
+      top: 15px;
+      height: 400px;
+    }
+
+    .hdx-universe-img {
+      width: 545px;
+    }
+
+    .hdx-chart-1 {
+      width: 500px;
+    }
+
+    .hdx-hydradx1-infographic {
+      height: auto;
+      width: 525px;
+    }
+
+    .hdx-hydradx2-infographic {
+      height: auto;
+      width: 525px;
+    }
+
+    .hdx-about-hydradx-title {
+      margin: 0;
+    }
+
+    .hdx-the-teams-behind-content-text {
+      margin: 0;
+    }
+
+    .hdx-roadmap .hdx-right-body-icon-container {
+      display: none;
+    }
+
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 60px;
+    //  width: 128px;
+    //}
+
+    .hdx-video-and-podcast-header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hdx-video-and-podcast-btn {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    .weird-stroke {
+      left: -120px;
+      top: 10px;
+      height: 300px;
+    }
+
+    .hdx-universe-img {
+      width: 480px;
+    }
+
+    .hdx-chart-1 {
+      width: 400px;
+    }
+
+    .hdx-hydradx1-infographic, .hdx-hydradx2-infographic {
+      width: 445px;
+    }
+
+    .join-hydration {
+      margin-top: 30px;
+    }
+
+    .community {
+      margin-top: 34px;
+    }
+
+    .hdx-teams-behind-container {
+      height: 575px;
+    }
+
+    .hdx-team-logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    //.hdx-investor-and-backer-logo {
+    //  width: 110px;
+    //  margin-left: 20px;
+    //}
+
+    .hdx-info-graphic {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .weird-stroke {
+      left: -155px;
+      top: -2px;
+      height: 350px;
+      width: 350px;
+    }
+
+    .join-hydration {
+      margin-top: 0;
+    }
+
+    .hdx-universe-img {
+      width: 350px;
+    }
+
+    .hdx-chart-1 {
+      width: 350px;
+    }
+
+    .hdx-hydradx1-infographic, .hdx-hydradx2-infographic {
+      width: 350px;
+    }
+  }
+}
+
+.scroll-down .header-desktop,
+.scroll-down .header-mobile {
+  transform: translate3d(0, -100%, 0);
+  top: 0;
+}
+
+.scroll-up .header-desktop,
+.scroll-up .header-mobile {
+  background-color: var(--bgc);
+  transform: none;
+  top: 0;
+}
+
+.scroll-up .header,
+.scroll .header
+{
+  padding: 0 58px;
+}
+.scroll-up .header__logo img,
+.scroll .header__logo img{
+  width: 56px;
+}
+
+@media (max-width: breakpoint-min('xl')) {
+  .scroll-up .header,
+  .scroll .header
+  {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+  .scroll-up .header,
+  .scroll .header
+  {
+    padding-top: 7em;
   }
 }

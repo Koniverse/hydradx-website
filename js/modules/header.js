@@ -5,8 +5,8 @@ const $body = $('body');
 const $mobilePopup = $('header.header-desktop');
 const $mobileHeader = $('header.header-mobile');
 const $menuBtn = $mobileHeader.find('.header-mobile__hamberger');
-const $languageSelectorBtn = $mobilePopup.find('.language-selector');
-const $languageMenu = $mobilePopup.find('.language-menu');
+const $languageSelectorBtn = $mobilePopup.find('.about-selector');
+const $languageMenu = $mobilePopup.find('.about-menu');
 
 const $bkMobileMenu = $mobilePopup.find('ul.header__menu').clone();
 const $bkMenuLanguage = $languageMenu.clone();
@@ -17,7 +17,7 @@ const isMobileMenuOpen = () => {
 
 const toggleMobileMenu = () => {
     if (isMobileMenuOpen()) {
-        $mobileHeader.css('position', 'relative');
+        $mobileHeader.css('position', 'fixed');
     }
 
     $mobileHeader.toggleClass('open');
@@ -27,25 +27,30 @@ const toggleMobileMenu = () => {
         }
     });
     $body.toggleClass('no-scrolling');
+    setTimeout(() => {
+        $body.toggleClass('position-fixed');
+    }, 250)
+
 }
 
 const toggleDesktopLanguageMenu = () => {
+    console.log('$languageSelectorBtn', $languageSelectorBtn)
     const {top, left} = $languageSelectorBtn.position();
     const height = $languageSelectorBtn.outerHeight(true);
 
     $languageMenu.fadeToggle(100);
-
-    $languageMenu.css({top: top + height, left: left - 47});
+    //
+    // $languageMenu.css({top: top + height, left: left - 47});
 }
 
 const isMobileLanguageMenuOpened = () => {
-    return $mobilePopup.find('ul.header__menu.select-language').length > 0;
+    return $mobilePopup.find('ul.header__menu.about-language').length > 0;
 }
 
 const getLanguageMenu = () => {
     return $bkMenuLanguage.clone()
-        .removeClass('language-menu')
-        .addClass('header__menu select-language')
+        .removeClass('about-menu')
+        .addClass('header__menu about-language')
         .css('display', 'block')
         .on('click', '.back', toggleMobileLanguageMenu);
 }
@@ -63,7 +68,7 @@ const toggleMobileLanguageMenu = () => {
         : getLanguageMenu();
 
     $newMenu
-        .css('display', 'none')
+        .css({display: 'block', position: 'static', border: 'none', "box-shadow": 'none', "padding-top": "60px", "background-color": "transparent"})
         .fadeIn(300);
 
     $mobilePopup

@@ -1,0 +1,28 @@
+{
+  "aboutHydradx": [
+    "We created the Omnipool: A novel kind of AMM",
+    "Trade many assets in a single pool",
+    "Built on Substrate, secure and cross-chain by design",
+    "Native liquidity for the Polkadot ecosystem",
+    "Decentralized governance, community-first"
+  ],
+  "informationAboutHydraDx": [
+    {
+      "title": "Multi-asset Omnipool",
+      "text": "Our unique solution enables combining all assets into one shared liquidity pool – unlocking unparalleled efficiency."
+    },
+    {
+      "title": "powered by hdx",
+      "text": "Native reserve token improves security and aligns incentives of key network participants. The total supply of HDX is a function of liquidity provisioned."
+    }
+  ],
+  "advantages": [
+    "Low transaction costs",
+    "High transaction speed",
+    "A multitude of assets in a single liquidity pool (“an ocean of liquidity”)",
+    "Earn passive income by becoming a liquidity provider",
+    "Reduced slippage due to aggregated liquidity",
+    "Possibility to provide liquidity for a single asset (together with chain token LHDX)",
+    "Order batching, providing a uniform clearing price & MEV protection"
+  ]
+}
