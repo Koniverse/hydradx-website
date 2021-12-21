@@ -197,6 +197,14 @@
       margin-bottom: 40px;
     }
 
+    .hdx-t-middle-content-container {
+      padding-top: 50px;
+    }
+
+    .hdx-t-top-content-container {
+      margin-bottom: 82px;
+    }
+
     .hdx-t-more-information-btn-wrapper {
       display: flex;
       justify-content: center;
@@ -240,6 +248,14 @@
   @media (max-width: breakpoint-min('md')) {
     .hdx-t-current-and-new-tokenomics-chart {
       width: 400px;
+    }
+
+    .hdx-t-middle-content-container {
+      padding-top: 0;
+    }
+
+    .header-background {
+      height: 1160px;
     }
 
     .hdx-t-middle-content-container .hdx-left-body-icon-container,
