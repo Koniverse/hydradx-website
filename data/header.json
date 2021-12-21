@@ -2,7 +2,7 @@
   "menu": [
     {
       "text": "about",
-      "url": "/",
+      "url": "/#",
       "dropdown": true,
       "childrenArr": [
         "tokenomics",

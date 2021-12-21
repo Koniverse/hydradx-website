@@ -17,7 +17,7 @@ const isMobileMenuOpen = () => {
 
 const toggleMobileMenu = () => {
     if (isMobileMenuOpen()) {
-        $mobileHeader.css('position', 'relative');
+        $mobileHeader.css('position', 'fixed');
     }
 
     $mobileHeader.toggleClass('open');
@@ -27,6 +27,10 @@ const toggleMobileMenu = () => {
         }
     });
     $body.toggleClass('no-scrolling');
+    setTimeout(() => {
+        $body.toggleClass('position-fixed');
+    }, 250)
+
 }
 
 const toggleDesktopLanguageMenu = () => {

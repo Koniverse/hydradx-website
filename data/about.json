@@ -1,13 +1,14 @@
 {
   "aboutHydradx": [
-    "The Future is Multichain and Shared Liquidity.",
-    "We enable frictionless liquidity for all crypto-assets",
-    "Build open, neutral & autonomous protocol for liquidity",
-    "Enable global permissionless finance."
+    "We created the Omnipool: A novel kind of AMM",
+    "Trade many assets in a single pool",
+    "Built on Substrate, secure and cross-chain by design",
+    "Native liquidity for the Polkadot ecosystem",
+    "Decentralized governance, community-first"
   ],
   "informationAboutHydraDx": [
     {
-      "title": "multi-asset liquidity omnipool",
+      "title": "Multi-asset Omnipool",
       "text": "Our unique solution enables combining all assets into one shared liquidity pool – unlocking unparalleled efficiency."
     },
     {
@@ -18,10 +19,10 @@
   "advantages": [
     "Low transaction costs",
     "High transaction speed",
-    "Users don’t have to use asset in pairs, rather one or any number of assets",
-    "Users can put their idle capital to work",
-    "Financial infrastructure for developers and their applications (e.g. swap assets directly in wallet, you can plug it to dex aggregators or liquidity aggregator yearn finance)",
-    "Immediate asset exchange - swap",
-    "Liquidity providing - instead of just holding your assets on a wallet, you can provide asset to liquidity pool to earn fees and HDX"
+    "A multitude of assets in a single liquidity pool (“an ocean of liquidity”)",
+    "Earn passive income by becoming a liquidity provider",
+    "Reduced slippage due to aggregated liquidity",
+    "Possibility to provide liquidity for a single asset (together with chain token LHDX)",
+    "Order batching, providing a uniform clearing price & MEV protection"
   ]
 }

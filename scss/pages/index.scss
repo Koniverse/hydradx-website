@@ -17,6 +17,10 @@
     margin-top: 64px;
   }
 
+  .hdx-top-content-item:first-child {
+    padding-right: 50px;
+  }
+
   .hdx-about-hydradx-content-title {
     text-transform: uppercase;
   }
@@ -120,12 +124,21 @@
     position: relative;
   }
 
+  .hdx-roadmap {
+    position: relative;
+  }
+
   .hdx-more-information-container .hdx-right-body-icon-container {
     position: absolute;
     right: 0;
     top: 263px;
   }
 
+  .hdx-roadmap .hdx-right-body-icon-container {
+    position: absolute;
+    right: 0;
+    bottom: 195px;
+  }
 
   .hdx-teams-behind-container {
     background-size: 100% auto;
@@ -152,11 +165,11 @@
   }
 
 
-  .hdx-investor-and-backer-logo {
-    width: 156px;
-    height: 70px;
-    margin-left: 116px;
-  }
+  //.hdx-investor-and-backer-logo {
+  //  width: 156px;
+  //  height: 70px;
+  //  margin-left: 116px;
+  //}
 
   .hdx-the-teams-behind-content-text {
     margin: 0 280px;
@@ -187,6 +200,10 @@
   .hdx-investor-and-backer-title {
     margin-bottom: 32px;
     padding-right: 70px;
+  }
+
+  .board-info {
+    margin-top: 300px;
   }
 
   .members {
@@ -328,6 +345,7 @@
 
   .community {
     margin-top: 52px;
+    max-width: 500px;
   }
 
   .hdx-video-and-podcast-title {
@@ -376,9 +394,6 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-    }
-
-    .hdx-top-content-item {
       margin-top: 50px;
     }
 
@@ -458,14 +473,14 @@
       justify-content: center;
     }
 
-    .hdx-investor-and-backer-logo {
-      margin-left: 180px;
-      margin-top: 20px;
-    }
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 180px;
+    //  margin-top: 20px;
+    //}
 
-    .hdx-investor-and-backer-logo:first-child, .hdx-investor-and-backer-logo:nth-child(4) {
-      margin-left: 0;
-    }
+    //.hdx-investor-and-backer-logo:first-child, .hdx-investor-and-backer-logo:nth-child(4) {
+    //  margin-left: 0;
+    //}
 
     .community {
       max-width: 500px;
@@ -507,9 +522,9 @@
       margin: 0 80px;
     }
 
-    .hdx-investor-and-backer-logo {
-      margin-left: 100px;
-    }
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 100px;
+    //}
 
     .members img {
       margin: 2em 3em;
@@ -549,10 +564,14 @@
       margin: 0;
     }
 
-    .hdx-investor-and-backer-logo {
-      margin-left: 60px;
-      width: 128px;
+    .hdx-roadmap .hdx-right-body-icon-container {
+      display: none;
     }
+
+    //.hdx-investor-and-backer-logo {
+    //  margin-left: 60px;
+    //  width: 128px;
+    //}
 
     .hdx-video-and-podcast-header {
       flex-direction: column;
@@ -600,9 +619,10 @@
       height: 100px;
     }
 
-    .hdx-investor-and-backer-logo {
-      width: 110px;
-    }
+    //.hdx-investor-and-backer-logo {
+    //  width: 110px;
+    //  margin-left: 20px;
+    //}
 
     .hdx-info-graphic {
       height: 400px;
@@ -611,10 +631,14 @@
 
   @media (max-width: 430px) {
     .weird-stroke {
-      left: -230px;
-      top: -22px;
-      height: 500px;
-      width: 500px;
+      left: -155px;
+      top: -2px;
+      height: 350px;
+      width: 350px;
+    }
+
+    .join-hydration {
+      margin-top: 0;
     }
 
     .hdx-universe-img {
@@ -628,5 +652,44 @@
     .hdx-hydradx1-infographic, .hdx-hydradx2-infographic {
       width: 350px;
     }
+  }
+}
+
+.scroll-down .header-desktop,
+.scroll-down .header-mobile {
+  transform: translate3d(0, -100%, 0);
+  top: 0;
+}
+
+.scroll-up .header-desktop,
+.scroll-up .header-mobile {
+  background-color: var(--bgc);
+  transform: none;
+  top: 0;
+}
+
+.scroll-up .header,
+.scroll .header
+{
+  padding: 0 58px;
+}
+.scroll-up .header__logo img,
+.scroll .header__logo img{
+  width: 56px;
+}
+
+@media (max-width: breakpoint-min('xl')) {
+  .scroll-up .header,
+  .scroll .header
+  {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: breakpoint-min('sm')) {
+  .scroll-up .header,
+  .scroll .header
+  {
+    padding-top: 7em;
   }
 }

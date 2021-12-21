@@ -13,8 +13,8 @@ block content
         .header-background
         .hdx-top-content-container.row.gx-0.px-0
             .hdx-top-content-item.col-lg-6
-                span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is a cross-chain liquidity protocol built on
-                span.hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Substrate
+                span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is the multi-headed liquidity protocol built for the
+                span.hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Polkadot ecosystem
             .hdx-top-content-item.hdx-top-content.col-lg-6
                 each aboutHdxInfo in about.aboutHydradx
                     +hdx-text-with-arrow(aboutHdxInfo)
@@ -33,7 +33,7 @@ block content
                             each infoAboutHdx in about.informationAboutHydraDx
                                 .hdx-home-info-box-item.col-lg-6
                                     +hdx-info-box(infoAboutHdx.title, infoAboutHdx.text)
-            .hdx-about-hydradx-title.fz-40.p-color.ff-sans-hl Enable global permissionless finance with Multi-Chain
+            .hdx-about-hydradx-title.fz-40.p-color.ff-sans-hl Multi-Chain Powered by Substrate
             .row.gx-0
                 .hdx-hydradx1-infographic-wrapper.col-lg-6.px-0
                     .hdx-info-graphic
@@ -50,7 +50,7 @@ block content
         .container.px-0
             .row.gx-0
                 .hdx-more-information-item.col-lg-6.px-0
-                    .hdx-more-information-item__title.fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase HydraDX is build to support various financial applications and optimized for DeFi use cases.
+                    .hdx-more-information-item__title.fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase Features of the HydraDX Omnipool
                 .hdx-more-information-item.col-lg-6.px-0
                     each hdxAdvantage in about.advantages
                         +hdx-text-with-arrow(hdxAdvantage)
@@ -61,20 +61,17 @@ block content
             .hdx-the-teams-behind-content-text.text-center The Zee Prime team has co-founded the project, which is led by Jakub. Other Jakub has joined as a technical co-founder and a CTO. The company behind HydraDX is called GalacticCouncil and is tightly connected to ZeePrime VentureCapital. We are working with Blockscience on advanced mathematical modelling and recently we joined the following initiative with Token Engeneering academy. 
             .hdx-teams-behind-logo
                 img.hdx-team-logo(src=url('/images/team1.png'))
-                img.hdx-team-logo(src=url('/images/team2.png'))
-                img.hdx-team-logo(src=url('/images/team3.png'))
-                img.hdx-team-logo(src=url('/images/team4.png'))
     .container.px-0
-        .hdx-investor-and-backer-container
-            .hdx-investor-and-backer-left-content
-                .hdx-investor-and-backer-title.fz-40.p-color.ff-sans-hl.h-text-transform-uppercase Our Investor and Backer
-                .hdx-investor-and-backer-text We are proud to announce that we have successfully become a much bigger family. Led by KR1 and Hypersphere, with CMS, Tenzor, DFG and a long list of angels, these are the strategic investors who are backing the company tasked with the development of the decentralized HydraDX protocol.
-            .hdx-investor-and-backer-right-content
-                img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer1.svg'))
-                img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer2.svg'))
-                img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer3.svg'))
-                img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer4.svg'))
-                img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer5.svg'))
+        //.hdx-investor-and-backer-container
+        //    .hdx-investor-and-backer-left-content
+        //        .hdx-investor-and-backer-title.fz-40.p-color.ff-sans-hl.h-text-transform-uppercase Our Investor and Backer
+        //        .hdx-investor-and-backer-text We are proud to announce that we have successfully become a much bigger family. Led by KR1 and Hypersphere, with CMS, Tenzor, DFG and a long list of angels, these are the strategic investors who are backing the company tasked with the development of the decentralized HydraDX protocol.
+        //    .hdx-investor-and-backer-right-content
+        //        img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer1.svg'))
+        //        img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer2.svg'))
+        //        img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer3.svg'))
+        //        img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer4.svg'))
+        //        img.hdx-investor-and-backer-logo(src=url('/images/investor-and-backer5.svg'))
         .board-info.member-of
             .board-info__label Member Of
             .board-info__body
@@ -112,19 +109,54 @@ block content
                     a.btn.btn__lg(href='#') Join Hydration
                 .col-xl-4.community
                     +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
-    .container.px-3
-        h1.headline-2 Roadmap
-        table.table.roadmap
-            each one in roadmap
-                each task, index in one.tasks
-                    - var lastTaskClass = ((index === one.tasks.length - 1) ? 'task-last' : '');
-                    - var firstTaskClass = ((index === 0) ? 'task-first' : '');
-                    tr(class=task.done ? '' : 'p-color')
-                        if index === 0
-                            td.milestone(rowspan=one.tasks.length)=one.milestone
-                        td.task(class=`${firstTaskClass} ${lastTaskClass}`)
-                            ul.listing
-                                li.listing__item(class=task.done ? '' : 'listing__item--red')=task.name
-                        td.done(class=`${firstTaskClass} ${lastTaskClass}`)
-                            ul.listing.listing__no-style
-                                li.listing__item=`${task.done ? '★' : '☆'}`
+    .hdx-roadmap
+        .container.px-3
+            h1.headline-2 Roadmap
+            table.table.roadmap
+                each one in roadmap
+                    each task, index in one.tasks
+                        - var lastTaskClass = ((index === one.tasks.length - 1) ? 'task-last' : '');
+                        - var firstTaskClass = ((index === 0) ? 'task-first' : '');
+                        tr(class=task.done ? '' : 'p-color')
+                            if index === 0
+                                td.milestone(rowspan=one.tasks.length)=one.milestone
+                            td.task(class=`${firstTaskClass} ${lastTaskClass}`)
+                                ul.listing
+                                    li.listing__item(class=task.done ? '' : 'listing__item--red')=task.name
+                            td.done(class=`${firstTaskClass} ${lastTaskClass}`)
+                                ul.listing.listing__no-style
+                                    li.listing__item=`${task.done ? '★' : '☆'}`
+            +hdx-right-body-icon
+    script.
+        const body = document.body;
+        const scrollUp = "scroll-up";
+        const scrollDown = "scroll-down";
+        const headerHeight = document.querySelector('.header__placeholder').offsetHeight;
+        let lastScroll = 0;
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) {
+                body.classList.remove(scrollUp);
+                body.classList.remove('scroll');
+                return;
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+                // down
+                body.classList.remove(scrollUp);
+                body.classList.add(scrollDown);
+                if (currentScroll > headerHeight) {
+                    body.classList.add('scroll');
+                }
+            } else if (
+                currentScroll < lastScroll &&
+                body.classList.contains(scrollDown)
+            ) {
+                // up
+                body.classList.remove(scrollDown);
+                body.classList.add(scrollUp);
+
+            }
+            lastScroll = currentScroll;
+        });

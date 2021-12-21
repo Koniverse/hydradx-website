@@ -71,6 +71,15 @@
     justify-content: space-between;
     padding: 1em 48px;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 56px;
+    z-index: 100;
+    transition: transform 0.4s, background-color 0.4s;
+
+    &__placeholder {
+        height: 145px;
+    }
 
     &__logo {
         flex: 1;
@@ -165,6 +174,10 @@
     @media (max-width: breakpoint-min('xxl')) {
         padding: 1em;
 
+        &__placeholder {
+            height: 133px;
+        }
+
         &__menu {
             li {
                 margin: 10px 15px;
@@ -192,6 +205,10 @@
         flex-flow: column;
         z-index: 10;
         padding-top: 8em;
+
+        &__placeholder {
+            height: 116px;
+        }
 
         &__logo {
             display: none;
@@ -230,6 +247,10 @@
     @media (max-width: breakpoint-min('sm')) {
         padding-top: 7em;
 
+        &__placeholder {
+            height: 108px;
+        }
+
         &__menu {
             margin-top: 80px;
             width: 100%;
@@ -246,6 +267,12 @@
     }
 }
 
+.menu-item__arrow-down {
+    &.label-active {
+        color: var(--primray-color);
+    }
+}
+
 .menu-item-btn {
     display: flex;
     align-items: center;
@@ -253,16 +280,19 @@
 
 .menu-item__arrow-down {
     padding-left: 6px;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
 }
 
 .header-mobile {
     padding: 1em;
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
     z-index: 1000;
+    width: 100%;
+    top: 56px;
+    transition: transform 0.4s, background-color 0.4s;
 
     $self: &;
     &.open {
@@ -319,6 +349,7 @@
 
     @media (max-width: breakpoint-min('sm')) {
         padding: 2em 1em;
+        top: 88px;
 
         &__logo {
             width: 150px;
@@ -333,6 +364,11 @@
 
     .header-social-media-text {
         text-align: center;
+    }
+
+    .menu-item__arrow-down {
+        width: 22px;
+        height: 22px;
     }
 }
 
