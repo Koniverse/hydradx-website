@@ -52,19 +52,19 @@
   ],
   "socialNetwork": [
     {
-      "name": "Twitter",
+      "name": "twitter",
       "color": "twitter-color"
     },
     {
-      "name": "Github",
+      "name": "github",
       "color": "github-color"
     },
     {
-      "name": "Telegram",
+      "name": "telegram",
       "color": "telegram-color"
     },
     {
-      "name": "Discord",
+      "name": "discord",
       "color": "discord-color"
     }
   ],

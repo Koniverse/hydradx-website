@@ -1,17 +1,18 @@
 .page-index {
   .header-background {
-       background-size: 100% auto;
-       background-image: url("./images/new-header-background.png");
-       background-repeat: no-repeat;
-       display: flow-root;
-       height: 1360px;
-       position: absolute;
-       z-index: -1;
-       width: 100%;
-       top: 56px;
-       left: 0;
-       min-width: $min-width;
-     }
+    background-size: 100% auto;
+    background-image: url("./images/new-header-background.png");
+    background-repeat: no-repeat;
+    display: flow-root;
+    height: 1360px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    background-position: center bottom;
+    min-width: $min-width;
+  }
 
   .hdx-top-content-container {
     margin-top: 64px;
@@ -40,6 +41,11 @@
     margin-top: 34px;
   }
 
+  .hdx-more-information-item__title {
+    font-size: 66px;
+    line-height: 80px;
+  }
+
   .hdx-universe-img {
     margin: 59px 0;
     width: 1330px;
@@ -47,12 +53,12 @@
 
   .hdx-transform-background {
     background: linear-gradient(180deg, rgba(13, 16, 110, 0) 1.06%, #0D106E 100%);
-    height: 70px;
+    height: 100%;
   }
 
   .hdx-midle-content-container {
     background: linear-gradient(180deg, #0D106E 8.29%, #0B0D56 76.59%);
-    margin-top: -10px;
+    margin-top: -40px;
     position: relative;
   }
 
@@ -72,6 +78,7 @@
 
   .hdx-chart-1 {
     margin-left: -28px;
+    margin-top: 30px;
     width: 704px;
   }
 
@@ -203,13 +210,14 @@
   }
 
   .board-info {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .members {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     img {
       margin: 0.2em 3em;
     }
@@ -315,13 +323,14 @@
   }
 
   .hdx-start-building-with-us-container {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     margin-top: 100px;
   }
 
   .hdx-start-building-with-us-background-container {
     position: relative;
   }
+
   .hdx-start-building-with-us-background {
     background-size: contain;
     background-image: url("./images/start-building-with-us-bg.png");
@@ -741,27 +750,25 @@
 }
 
 .scroll-up .header,
-.scroll .header
-{
+.scroll .header {
   padding: 0 58px;
 }
+
 .scroll-up .header__logo img,
-.scroll .header__logo img{
+.scroll .header__logo img {
   width: 56px;
 }
 
 @media (max-width: breakpoint-min('xl')) {
   .scroll-up .header,
-  .scroll .header
-  {
+  .scroll .header {
     padding-top: 8em;
   }
 }
 
 @media (max-width: breakpoint-min('sm')) {
   .scroll-up .header,
-  .scroll .header
-  {
+  .scroll .header {
     padding-top: 7em;
   }
 }
