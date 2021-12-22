@@ -9,7 +9,7 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .hdx-t-top-content-container.container.px-0
+    .hdx-t-top-content-container.container.px-4
         .header-background
         .hdx-t-content-box
             .hdx-t-top-content-title.hdx-t-content-title.ff-sans-hl.fz-48 Powering HydraDX (HDX) Token
@@ -26,7 +26,7 @@ block content
                 .hdx-t-more-information-btn-wrapper
                     .hdx-t-more-information-btn.btn.btn__md More Information
     .hdx-t-middle-content-container
-        .container.px-0
+        .container.px-4
             .hdx-t-content-title.ff-sans-hl.fz-48 HDX Tokenomics
             .hdx-t-text-container
                 span.fz-18.text-center HDX is a utility token with a fixed supply of
@@ -54,14 +54,14 @@ block content
                     .hdx-t-info-box-title.fz-24 New Token Allocation
                     each newToken in tokenomics.newTokenAllocation
                         +hdx-text-with-arrow(newToken)
-        img.hdx-t-current-and-new-tokenomics-chart(src=url('/images/current-and-new-tokenomics-chart.png'))
+            img.hdx-t-current-and-new-tokenomics-chart(src=url('/images/current-and-new-tokenomics-chart.png'))
         .hdx-t-text-container
             span.fz-18.text-center See more details in the the blogpost
             span.fz-18.text-center.p-color  "Referendum to Triple HDX Balances"
         +hdx-left-body-icon
         +hdx-right-body-icon
     .hdx-t-bottom-content-container
-        .container
+        .container.px-4
             .hdx-t-content-title.ff-sans-hl.fz-48 What is the token vesting schedule?
             .hdx-t-token-vesting-schadule-wrapper
                 .hdx-t-token-vesting-schadule-item
@@ -71,7 +71,12 @@ block content
 
             .tokenomics-chart-wrapper
                 .hdx-t-bottom-text-container
-                    span.fz-20.h-text-transform-uppercase.p-color.p-shadow BSX Supply unlock projection
+                    span.fz-20.h-text-transform-uppercase.p-color.p-shadow.hdx-t-bottom-text BSX Supply unlock projection
                     span.fz-18 (monthly, 24 months from mainet)
 
-                canvas#chartPic(width="920" height="550")
+            .hdx-t-bottom-chart-wrapper
+                canvas#chartPic(width="840" height="440")
+                .hdx-t-chart-legend-wrapper
+                    each legendItem in tokenomics.legendsItem
+                        +hdx-chart-legend-item(legendItem.text, legendItem.boxColor)
+

@@ -9,7 +9,7 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .hdx-d-top-content-container.container.px-0
+    .hdx-d-top-content-container.container.px-4
         .header-background
         .hdx-d-content-box
             .hdx-d-top-content-title.hdx-d-content-title.ff-sans-hl.fz-48 HydraDX Democracy
@@ -24,14 +24,14 @@ block content
                 .hdx-d-more-information-btn-wrapper
                     .hdx-d-more-information-btn.btn.btn__md More Information
     .hdx-d-middle-content-container
-        .container.px-0
+        .container.px-4
             .row.gx-0
                 each advantage in democracy.advantages
                     .hdx-d-advantage-item.col-lg-4
                         img.hdx-d-avantage-icon(src=url(`/images/${advantage.img}.png`))
                         .hdx-d-info-box-small-title.fz-20=advantage.title
                         .hdx-d-advantage-item__text=advantage.text
-    .container.px-0
+    .container.px-4
         .hdx-d-hydradx-concil.row.gx-0
             .hdx-d-hydradx-concil-item.col-lg-6
                 .hdx-d-hydradx-concil-icon-title.hdx-d-info-box-small-title.text-center new elected council with 13 member

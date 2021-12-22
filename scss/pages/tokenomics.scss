@@ -68,8 +68,8 @@
   }
 
   .hdx-t-current-and-new-tokenomics-chart {
-    width: 1415px;
-    margin-top: 95px;
+    width: 100%;
+    margin-top: 0;
   }
 
   .hdx-t-middle-content-container {
@@ -90,6 +90,7 @@
     position: absolute;
     right: 0;
     top: 420px;
+    z-index: -10;
   }
 
   .hdx-t-text-container {
@@ -123,10 +124,24 @@
     margin-bottom: 20px;
   }
 
+  .hdx-t-bottom-text {
+    padding-right: 5px;
+  }
+
   .tokenomics-chart-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .hdx-t-bottom-chart-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hdx-t-chart-legend-wrapper {
+    padding-left: 105px;
+    padding-top: 10px;
   }
 
   @media (max-width: breakpoint-min('xxl')) {
@@ -134,24 +149,34 @@
       font-size: 24px;
       line-height: 32px;
     }
-
-    .hdx-t-current-and-new-tokenomics-chart {
-      width: 1145px;
-    }
-
     .hdx-t-current-and-new-token-item {
       width: 100%;
       margin-bottom: 70px;
-      padding: 0 150px;
+    }
+
+    .hdx-t-token-vesting-schadule-wrapper {
+      margin: 90px;
     }
 
     .hdx-t-info-box-title {
-      margin-bottom: 10px;
       text-align: center;
     }
 
     .hdx-t-text-container {
       margin: 12px 150px 60px;
+    }
+
+    .hdx-t-bottom-chart-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hdx-t-chart-legend-wrapper {
+      padding-top: 20px;
+      padding-left: 72px;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 840px;
     }
   }
 
@@ -171,18 +196,14 @@
     }
 
     .hdx-t-text-container {
-      margin: 12px 140px 60px;
-    }
-
-    .hdx-t-current-and-new-tokenomics-chart {
-      width: 945px;
+      margin: 12px 90px 60px;
     }
   }
 
-  @media (max-width: breakpoint-min('lg')) {
+  @media (max-width: breakpoint-max('lg')) {
 
     .header-background {
-      height: 1100px;
+      height: 1200px;
     }
 
     .hdx-t-content-title {
@@ -190,7 +211,7 @@
     }
 
     .hdx-t-text-container {
-      margin: 12px 40px 60px;
+      margin: 12px 0 60px;
     }
 
     .hdx-t-top-content-info-box-item {
@@ -211,15 +232,11 @@
     }
 
     .hdx-t-current-and-new-token-item {
-      padding: 0 45px;
+      padding: 0;
     }
 
     .hdx-t-tokenomics-item, .hdx-t-tokenomics-item:last-child {
-      padding: 20px 40px;
-    }
-
-    .hdx-t-current-and-new-tokenomics-chart {
-      width: 745px;
+      padding: 20px 0;
     }
 
     .hdx-info-box-with-header__header {
@@ -232,7 +249,7 @@
 
     .hdx-t-token-vesting-schadule-wrapper {
       flex-direction: column;
-      margin: 90px 30px;
+      margin: 90px 0;
     }
 
     .hdx-t-token-vesting-schadule-item:last-child {
@@ -240,27 +257,53 @@
       margin-top: 20px;
     }
 
+    .hdx-t-bottom-content-container {
+      padding-top: 60px;
+    }
+
     .tokenomics-chart {
 
+    }
+
+    .hdx-t-chart-legend-wrapper {
+      padding-left: 58px;
     }
   }
 
   @media (max-width: breakpoint-min('md')) {
-    .hdx-t-current-and-new-tokenomics-chart {
-      width: 400px;
-    }
-
     .hdx-t-middle-content-container {
       padding-top: 0;
     }
 
-    .header-background {
-      height: 1160px;
-    }
+    //.header-background {
+    //  height: 1160px;
+    //}
 
     .hdx-t-middle-content-container .hdx-left-body-icon-container,
     .hdx-t-middle-content-container .hdx-right-body-icon-container {
       display: none;
+    }
+
+    .hdx-t-chart-legend-wrapper {
+      padding-left: 88px;
+    }
+  }
+
+  @media (max-width: breakpoint-min('sm')) {
+    .hdx-t-content-title {
+      margin: 0;
+    }
+
+    .hdx-t-chart-legend-wrapper {
+      padding-left: 68px;
+    }
+
+    .hdx-t-content-box {
+      margin-bottom: 80px;
+    }
+
+    .hdx-t-token-vesting-schadule-wrapper {
+      margin: 60px 0;
     }
   }
 }
