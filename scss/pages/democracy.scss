@@ -105,8 +105,9 @@
   }
 
   .hdx-d-hydradx-concil-img {
-    width: 518px;
-    height: 518px;
+    width: 100%;
+    max-width: 518px;
+    height: auto;
   }
 
   .hdx-d-hydradx-concil-item:first-child {
@@ -134,8 +135,9 @@
   }
 
   .hdx-d-technical-commitee-img {
-    width: 715px;
-    height: 519px;
+    width: 100%;
+    max-width: 715px;
+    height: auto;
   }
 
   .hdx-d-bottom-content-img {
@@ -162,13 +164,17 @@
 
   @media (max-width: breakpoint-min('xxl')) {
     .hdx-d-hydradx-concil-img {
-      width: 448px;
-      height: 448px;
+      //width: 448px;
+      //height: 448px;
+    }
+
+    .hdx-d-content-title {
+      margin: 0 180px;
     }
 
     .hdx-d-technical-commitee-img {
-      width: 558px;
-      height: auto;
+      //width: 558px;
+      //height: auto;
     }
 
     .hdx-d-advantage-item {
@@ -182,14 +188,18 @@
   }
 
   @media (max-width: breakpoint-min('xl')) {
+    .hdx-d-content-title {
+      margin: 0 100px;
+    }
+
     .hdx-d-hydradx-concil-img {
-      width: 400px;
-      height: 400px;
+      //width: 400px;
+      //height: 400px;
     }
 
     .hdx-d-technical-commitee-img {
-      width: 458px;
-      height: auto;
+      //width: 458px;
+      //height: auto;
     }
 
     .hdx-d-bottom-content-img {
@@ -203,6 +213,11 @@
   }
 
   @media (max-width: breakpoint-min('lg')) {
+
+    .header-background {
+      height: 1070px;
+    }
+
     .hdx-d-more-information-btn-wrapper {
       display: flex;
       justify-content: center;
@@ -217,7 +232,7 @@
     }
 
     .hdx-d-middle-content-container {
-      padding-top: 350px;
+      padding-top: 250px;
       height: 1400px;
     }
 
@@ -238,8 +253,17 @@
       text-align: center;
     }
 
+    .hdx-d-hydradx-concil {
+      margin-top: 80px;
+    }
+
     .hdx-d-technical-commitee-item {
       padding-bottom: 70px;
+      padding-right: 0;
+    }
+
+    .hdx-d-technical-commitee-item:first-child {
+      padding-right: 0;
     }
 
     .hdx-d-bottom-content-img {
@@ -247,15 +271,20 @@
     }
 
     .hdx-d-bottom-content-text-wrapper {
-      padding: 66px 66px 50px;
+      padding: 0 66px;
     }
 
     .hdx-d-bottom-content-container {
-      margin-top: 60px;
+      margin-top: 0;
     }
   }
 
   @media (max-width: breakpoint-min('md')) {
+
+    .header-background {
+      height: 1162px;
+    }
+
     .hdx-d-avantage-icon {
       width: 90px;
       height: 90px;
@@ -266,7 +295,8 @@
     }
 
     .hdx-d-middle-content-container {
-      padding-top: 310px;
+      padding-top: 200px;
+      height: 1340px;
     }
 
     .hdx-d-bottom-content-img {
@@ -274,7 +304,7 @@
     }
 
     .hdx-d-bottom-content-text-wrapper {
-      padding: 50px 36px 0;
+      padding: 0 36px;
     }
 
     .hdx-d-content-title {
@@ -284,7 +314,19 @@
 
   @media (max-width: breakpoint-min('sm')) {
     .hdx-d-bottom-content-text-wrapper {
-      padding: 66px 12px 50px;
+      padding: 0;
+    }
+
+    .hdx-d-technical-commitee-img {
+      //width: 400px;
+    }
+
+    .header-background {
+      height: 1120px;
+    }
+
+    .hdx-d-middle-content-container {
+      height: 1440px;
     }
   }
 }

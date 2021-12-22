@@ -149,3 +149,10 @@
         line-height: 20px;
     }
 }
+
+@media (max-width: breakpoint-min('sm')) {
+    .fz-48 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}

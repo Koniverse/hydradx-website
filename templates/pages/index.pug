@@ -9,7 +9,7 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .container.px-0
+    .container.px-4
         .header-background
         .hdx-top-content-container.row.gx-0.px-0
             .hdx-top-content-item.col-lg-6
@@ -21,9 +21,9 @@ block content
                 .btn.btn__lg.hdx-about-hydradx-subscribe-btn Subscribe
         .hdx-universe-img-container
             img.hdx-universe-img(src=url('/images/universe.png'))
-        .hdx-transform-background
+    .hdx-transform-background
     .hdx-midle-content-container
-        .hdx-about-hydradx-advantages-container.container.px-0
+        .hdx-about-hydradx-advantages-container.container.px-4
             .hdx-about-hydradx-advantages.row.gx-0
                 .hdx-about-hydradx-advantage.col-lg-6.px-0
                     img.hdx-chart-1(src=url('/images/hydradx-chart1.png'))
@@ -47,7 +47,7 @@ block content
                     .hdx-hydradx1-infographic__text.text-center HydraDX is built as a parachain – specialized blockchain on Polkadot network, benefiting from shared security, speed, flexibility and possibility to work with any Ethereum based asset, Polkadot native assets and Bitcoin with more coming
         +hdx-left-body-icon
     .hdx-more-information-container
-        .container.px-0
+        .container.px-4
             .row.gx-0
                 .hdx-more-information-item.col-lg-6.px-0
                     .hdx-more-information-item__title.fz-40.p-color.ff-sans-hl.h-pr-100.h-text-transform-uppercase Features of the HydraDX Omnipool
@@ -55,13 +55,13 @@ block content
                     each hdxAdvantage in about.advantages
                         +hdx-text-with-arrow(hdxAdvantage)
         +hdx-right-body-icon
-    .hdx-teams-behind-container
-        .container.px-0
-            .fz-40.p-color.ff-sans-hl.h-text-transform-uppercase.text-center The Teams behind HydraDX
-            .hdx-the-teams-behind-content-text.text-center The Zee Prime team has co-founded the project, which is led by Jakub. Other Jakub has joined as a technical co-founder and a CTO. The company behind HydraDX is called GalacticCouncil and is tightly connected to ZeePrime VentureCapital. We are working with Blockscience on advanced mathematical modelling and recently we joined the following initiative with Token Engeneering academy. 
-            .hdx-teams-behind-logo
-                img.hdx-team-logo(src=url('/images/team1.png'))
-    .container.px-0
+    //.hdx-teams-behind-container
+    //    .container.px-4
+    //        .fz-40.p-color.ff-sans-hl.h-text-transform-uppercase.text-center The Teams behind HydraDX
+    //        .hdx-the-teams-behind-content-text.text-center The Zee Prime team has co-founded the project, which is led by Jakub. Other Jakub has joined as a technical co-founder and a CTO. The company behind HydraDX is called GalacticCouncil and is tightly connected to ZeePrime VentureCapital. We are working with Blockscience on advanced mathematical modelling and recently we joined the following initiative with Token Engeneering academy. 
+    //        .hdx-teams-behind-logo
+    //            img.hdx-team-logo(src=url('/images/team1.png'))
+    .container.px-4
         //.hdx-investor-and-backer-container
         //    .hdx-investor-and-backer-left-content
         //        .hdx-investor-and-backer-title.fz-40.p-color.ff-sans-hl.h-text-transform-uppercase Our Investor and Backer
@@ -81,7 +81,7 @@ block content
                     img(src=url('/images/substrate.svg') style="width: 155px")
 
     .hdx-video-and-podcast-container
-        .container.px-0
+        .container.px-4
             .hdx-video-and-podcast-header
                 .fz-40.p-color.ff-sans-hl.h-text-transform-uppercase video & podcast
                 .hdx-video-and-podcast-btn
@@ -105,12 +105,13 @@ block content
             .hdx-start-building-with-us-background.row.gx-0
                 .col-xl-4.d-none.d-xl-block
                 .col-xl-4.text-center.join-hydration
-                    .weird-stroke
-                    a.btn.btn__lg(href='#') Join Hydration
+                    .hdx-start-building-with-us__join-hydration
+                        img.weird-stroke(src=url('/images/weird_stroke.png'))
+                        a.btn.btn__lg(href='#') Join Hydration
                 .col-xl-4.community
                     +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
     .hdx-roadmap
-        .container.px-3
+        .container.px-4
             h1.headline-2 Road map
             table.table.roadmap
                 each one in roadmap
@@ -127,36 +128,8 @@ block content
                                 ul.listing.listing__no-style
                                     li.listing__item=`${task.done ? '★' : '☆'}`
             +hdx-right-body-icon
-    script.
-        const body = document.body;
-        const scrollUp = "scroll-up";
-        const scrollDown = "scroll-down";
-        const headerHeight = document.querySelector('.header__placeholder').offsetHeight;
-        let lastScroll = 0;
-
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-            if (currentScroll <= 0) {
-                body.classList.remove(scrollUp);
-                body.classList.remove('scroll');
-                return;
-            }
-
-            if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-                // down
-                body.classList.remove(scrollUp);
-                body.classList.add(scrollDown);
-                if (currentScroll > headerHeight) {
-                    body.classList.add('scroll');
-                }
-            } else if (
-                currentScroll < lastScroll &&
-                body.classList.contains(scrollDown)
-            ) {
-                // up
-                body.classList.remove(scrollDown);
-                body.classList.add(scrollUp);
-
-            }
-            lastScroll = currentScroll;
-        });
+            .about-the-team.text-center
+                h1.p-color.p-shadow.text-uppercase=__('aboutTheTeam')
+                img(src=url('/images/galactic-council.svg') style="width: 205px")
+                - var gcUrl = '<a href="#">Galactic Council</a>'
+                p.p-color !{__('aboutTheTeamIntro', gcUrl)}
