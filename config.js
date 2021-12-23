@@ -11,7 +11,7 @@ module.exports = {
     baseUrl: 'https://web3vietnam.github.io/',
     baseContext: 'hydradx-website',
     siteName: 'HydraDX',
-    siteDescription: 'Cross-chain liquidity protocol built on Substrate',
+    siteDescription: 'HydraDX is the multi-headed liquidity protocol built for the Polkadot ecosystem.',
     dateTimeFormat: 'ddd, MM/DD/YYYY - HH:mm',
     dateFormat: 'MM/DD/YYYY',
     postUrlStyle: 'POSTS_SLUG',
