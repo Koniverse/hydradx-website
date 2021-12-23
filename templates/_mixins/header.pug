@@ -28,7 +28,7 @@ mixin header
                 .header-social-media-text Get in touch
                 .header-social-media-list
                     each network in header.socialNetwork
-                        +hdx-social-media-btn(network.name, network.color)
+                        +hdx-social-media-btn(network.name, network.color, network.url, network.target)
 
     header.header-mobile.d-xl-none
         div.header-mobile__hamberger(role='button')
