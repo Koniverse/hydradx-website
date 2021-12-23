@@ -1,8 +1,6 @@
 .page-tokenomics {
   .header-background {
-    background-image: url("./images/tokenomic-header-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("./images/repeat-header-background.png") repeat;
     display: flow-root;
     height: 993px;
     position: absolute;
@@ -11,6 +9,37 @@
     top: 56px;
     left: 0;
     min-width: $min-width;
+  }
+
+  .header-background-inner {
+    position: relative;
+    height: 100%;
+  }
+
+  .header-background-inner-tokenomics-left, .header-background-inner-tokenomics-right {
+
+    position: absolute;
+    height: auto;
+  }
+
+  .header-background-inner-tokenomics-left {
+    max-width: 1000px;
+    top: 0;
+    left: 0;
+  }
+
+  .header-background-inner-tokenomics-right {
+    max-width: 300px;
+    right: 0;
+    bottom: 30px;
+  }
+
+  .hdx-t-transform-background {
+    background: linear-gradient(169.35deg, rgba(13, 17, 128, 0) 5.56%, #0C0E56 97.97%);
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
   .hdx-t-content-box {
@@ -94,7 +123,7 @@
   }
 
   .hdx-t-text-container {
-    margin: 12px 240px 60px;
+    margin: 12px 240px 80px;
     text-align: center;
   }
 
@@ -104,7 +133,7 @@
 
   .hdx-t-bottom-content-container {
     background: linear-gradient(0.45deg, #0D106E -2.53%, #0B0D56 102.77%);
-    padding-top: 110px;
+    padding-top: 80px;
   }
 
   .hdx-t-token-vesting-schadule-wrapper {
@@ -122,10 +151,11 @@
 
   .hdx-t-bottom-text-container {
     margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .hdx-t-bottom-text {
-    padding-right: 5px;
+    padding-right: 12px;
   }
 
   .tokenomics-chart-wrapper {
@@ -163,7 +193,7 @@
     }
 
     .hdx-t-text-container {
-      margin: 12px 150px 60px;
+      margin: 12px 150px 80px;
     }
 
     .hdx-t-bottom-chart-wrapper {
@@ -196,22 +226,22 @@
     }
 
     .hdx-t-text-container {
-      margin: 12px 90px 60px;
+      margin: 12px 90px 80px;
     }
   }
 
   @media (max-width: breakpoint-max('lg')) {
 
     .header-background {
-      height: 1200px;
+      height: 1160px;
     }
 
     .hdx-t-content-title {
-      margin: 0 80px;
+      margin: 0;
     }
 
     .hdx-t-text-container {
-      margin: 12px 0 60px;
+      margin: 12px 0 80px;
     }
 
     .hdx-t-top-content-info-box-item {
@@ -261,23 +291,19 @@
       padding-top: 60px;
     }
 
-    .tokenomics-chart {
-
-    }
-
     .hdx-t-chart-legend-wrapper {
       padding-left: 58px;
     }
   }
 
-  @media (max-width: breakpoint-min('md')) {
+  @media (max-width: breakpoint-max('md')) {
     .hdx-t-middle-content-container {
       padding-top: 0;
     }
 
-    //.header-background {
-    //  height: 1160px;
-    //}
+    .header-background {
+      height: 1180px;
+    }
 
     .hdx-t-middle-content-container .hdx-left-body-icon-container,
     .hdx-t-middle-content-container .hdx-right-body-icon-container {
@@ -285,11 +311,19 @@
     }
 
     .hdx-t-chart-legend-wrapper {
-      padding-left: 88px;
+      padding-left: 70px;
+    }
+
+    .hdx-t-bottom-chart-wrapper {
+      align-items: flex-start;
     }
   }
 
   @media (max-width: breakpoint-min('sm')) {
+    .header-background {
+      height: 1200px;
+    }
+
     .hdx-t-content-title {
       margin: 0;
     }

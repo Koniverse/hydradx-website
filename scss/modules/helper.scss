@@ -128,7 +128,7 @@
     }
 }
 
-@media (max-width: breakpoint-min('md')) {
+@media (max-width: breakpoint-max('md')) {
     .fz-48 {
         font-size: 38px;
         line-height: 44px;
