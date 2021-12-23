@@ -11,6 +11,8 @@ block append head
 block content
     .hdx-d-top-content-container.container.px-4
         .header-background
+            .header-background-inner
+                .hdx-d-transform-background
         .hdx-d-content-box
             .hdx-d-top-content-title.hdx-d-content-title.ff-sans-hl.fz-48 HydraDX Democracy
             .hdx-d-top-content-text.fz-18.text-center All decisions which affect the protocol are adopted following a democratic process which is supported by the Substrate democracy module. The central mechanism for establishing consensus among the stakeholders is the referendum.
@@ -22,7 +24,7 @@ block content
                 each info in democracy.information
                     +hdx-text-with-arrow(info)
                 .hdx-d-more-information-btn-wrapper
-                    .hdx-d-more-information-btn.btn.btn__md More Information
+                    a.hdx-d-more-information-btn.btn.btn__md(href=pageLink.referenda.url target=pageLink.referenda.target) More Information
     .hdx-d-middle-content-container
         .container.px-4
             .row.gx-0
@@ -42,20 +44,20 @@ block content
                 each concil in democracy.hydradxConcil
                     +hdx-text-with-arrow(concil)
                 .hdx-d-more-information-btn-wrapper
-                    .hdx-d-more-information-btn.btn.btn__md More Information
+                    a.hdx-d-more-information-btn.btn.btn__md(href=pageLink.hydradxCouncil.url target=pageLink.hydradxCouncil.target) More Information
         .hdx-d-technical-commitee.row.gx-0
             .hdx-d-technical-commitee-item.col-lg-6
                 .hdx-d-info-box-title.fz-40.ff-sans-hl Technical Commitee
                 each commitee in democracy.technicalCommitee
                     .hdx-d-info-box-text=commitee
                 .hdx-d-more-information-btn-wrapper
-                    .hdx-d-more-information-btn.btn.btn__md More Information
+                    a.hdx-d-more-information-btn.btn.btn__md(href=pageLink.technicalCommittee.url target=pageLink.technicalCommittee.target) More Information
             .hdx-d-technical-commitee-item.col-lg-6
                 img.hdx-d-technical-commitee-img(src=url('/images/technical-commitee.png'))
         .hdx-d-bottom-content-container
             .hdx-d-bottom-content-text-wrapper
                 span.h-text-transform-uppercase.hdx-d-bottom-content-text.ff-sans-hl More information about HydraDX Democracy,
-                span.h-text-transform-uppercase.hdx-d-bottom-content-text.p-color.ff-sans-hl  readmore here!
+                a.h-text-transform-uppercase.hdx-d-bottom-content-text.p-color.ff-sans-hl(href=pageLink.democracy.url target="_blank")  readmore here!
                 img.hdx-d-bottom-content-img(src=url('/images/democracy-bottom-image.png'))
 
 

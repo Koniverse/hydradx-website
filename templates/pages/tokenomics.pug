@@ -11,6 +11,10 @@ block append head
 block content
     .hdx-t-top-content-container.container.px-4
         .header-background
+            .header-background-inner
+                img.header-background-inner-tokenomics-left(src=url('/images/tokenomics-left-header-icon.png'))
+                img.header-background-inner-tokenomics-right(src=url('/images/tokenomics-right-header-icon.png'))
+                .hdx-t-transform-background
         .hdx-t-content-box
             .hdx-t-top-content-title.hdx-t-content-title.ff-sans-hl.fz-48 Powering HydraDX (HDX) Token
             .hdx-t-top-content-text.fz-18.text-center HDX is a native token of HydraDX. It will be used for governance, staking and more. We will disclose more details when our model is validated.
@@ -24,7 +28,7 @@ block content
                 each howToEarn in tokenomics.earnHdx
                     +hdx-text-with-arrow(howToEarn)
                 .hdx-t-more-information-btn-wrapper
-                    .hdx-t-more-information-btn.btn.btn__md More Information
+                    a.hdx-t-more-information-btn.btn.btn__md(href=pageLink.howCanIEarn.url target=pageLink.howCanIEarn.target) More Information
     .hdx-t-middle-content-container
         .container.px-4
             .hdx-t-content-title.ff-sans-hl.fz-48 HDX Tokenomics
@@ -70,13 +74,14 @@ block content
                     +hdx-text-with-arrow('The team and founders are vested for 18 months, starting 6 months after the mainnet launch with gradual unlocking (24 months total).')
 
             .tokenomics-chart-wrapper
-                .hdx-t-bottom-text-container
-                    span.fz-20.h-text-transform-uppercase.p-color.p-shadow.hdx-t-bottom-text BSX Supply unlock projection
-                    span.fz-18 (monthly, 24 months from mainet)
+                .hdx-t-chart-inner-container
+                    .hdx-t-bottom-text-container
+                        span.fz-20.h-text-transform-uppercase.p-color.p-shadow.hdx-t-bottom-text BSX Supply unlock projection
+                        span.fz-18 (monthly, 24 months from mainet)
 
-            .hdx-t-bottom-chart-wrapper
-                canvas#chartPic(width="840" height="440")
-                .hdx-t-chart-legend-wrapper
-                    each legendItem in tokenomics.legendsItem
-                        +hdx-chart-legend-item(legendItem.text, legendItem.boxColor)
+                    .hdx-t-bottom-chart-wrapper
+                        canvas#chartPic(width="840" height="440")
+                        .hdx-t-chart-legend-wrapper
+                            each legendItem in tokenomics.legendsItem
+                                +hdx-chart-legend-item(legendItem.text, legendItem.boxColor)
 

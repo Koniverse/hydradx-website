@@ -1,8 +1,6 @@
 .page-index {
   .header-background {
-    background-size: contain;
-    background-image: url("./images/new-header-background.png");
-    background-repeat: no-repeat;
+    background: url("./images/repeat-header-background.png") repeat;
     display: flow-root;
     height: 1360px;
     position: absolute;
@@ -12,6 +10,44 @@
     left: 0;
     min-width: $min-width;
   }
+
+  .header-background-inner {
+    height: 100%;
+    position: relative;
+  }
+
+  .header-background-inner-hydra-left, .header-background-inner-hydra-right {
+    max-width: 490px;
+    height: auto;
+    position: absolute;
+  }
+
+  .header-background-inner-hydra-left {
+    top: 0;
+    left: 0;
+  }
+
+  .header-background-inner-hydra-right {
+    transform: scaleX(-1);
+    right: 0;
+    top: 150px;
+  }
+  //.header-background-inner-wrapper {
+  //  position: relative;
+  //  background: url("./images/repeat-header-background.png") repeat;
+  //  height: 100%;
+  //  z-index: -1;
+  //}
+
+  //.header-background-inner-wrapper:before {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //  background: url("./images/hydra.png") no-repeat;
+  //  width: 470px;
+  //  height: 100%;
+  //  z-index: 1000;
+  //}
 
   .hdx-top-content-container {
     margin-top: 64px;
@@ -52,7 +88,10 @@
 
   .hdx-transform-background {
     background: linear-gradient(180deg, rgba(13, 16, 110, 0) 1.06%, #0D106E 100%);
-    height: 70px;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
   .hdx-midle-content-container {
@@ -376,6 +415,10 @@
     }
   }
 
+  .hdx-video-and-podcast-btn-bottom {
+    display: none;
+  }
+
   @media (min-width: 1921px) {
     .header-background {
       background-size: 100% auto;
@@ -440,6 +483,14 @@
 
     .hdx-top-content-item:last-child {
       margin-top: 50px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .hdx-subscribe-btn-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
     }
 
     .hdx-top-content-item:first-child {
@@ -551,12 +602,29 @@
     }
 
   }
-  @media (max-width: breakpoint-min('lg')) {
+  @media (max-width: breakpoint-max('lg')) {
     .weird-stroke {
       width: 550px;
       margin-right: -70px;
       //left: -106px;
       //top: 16px;
+    }
+
+    .hdx-transform-background {
+      bottom: 100px;
+    }
+
+    .hdx-video-and-podcast-btn {
+      display: none;
+    }
+
+    .hdx-video-and-podcast-header, .hdx-video-and-podcast-btn-bottom {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hdx-video-and-podcast-btn-bottom {
+      margin-top: 80px;
     }
 
     .hdx-universe-img {
@@ -609,13 +677,21 @@
     }
 
     .board-info {
-      margin-top: 200px;
+      margin-top: 100px;
     }
   }
 
   @media (max-width: breakpoint-min('md')) {
     .join-hydration {
       margin-top: 0;
+    }
+
+    .header-background-inner-hydra-left, .header-background-inner-hydra-right {
+      max-width: 420px;
+    }
+
+    .hdx-transform-background {
+      height: 600px;
     }
 
     .weird-stroke {
@@ -702,6 +778,39 @@
   }
 
   @media (max-width: breakpoint-min('sm')) {
+    .header-background-inner-hydra-left, .header-background-inner-hydra-right {
+      max-width: 350px;
+    }
+
+    .hdx-about-hydradx-advantages {
+      margin-bottom: 80px;
+    }
+
+    .board-info {
+      margin-top: 50px;
+    }
+
+    .hdx-video-and-podcast-container {
+      padding: 80px 0;
+
+    }
+
+    .hdx-start-building-with-us-container {
+      margin-top: 80px;
+    }
+
+    .hdx-about-hydradx-advantage:first-child {
+      margin-top: 40px;
+    }
+
+    .hdx-roadmap {
+      margin-top: -70px;
+    }
+
+    .hdx-top-content-container {
+      margin-top: 15px;
+    }
+
     .weird-stroke {
       width: 400px;
       margin-right: -100px;

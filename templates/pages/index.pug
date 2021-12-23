@@ -11,6 +11,10 @@ block append head
 block content
     .container.px-4
         .header-background
+            .header-background-inner
+                img.header-background-inner-hydra-left(src=url('/images/hydra.png'))
+                img.header-background-inner-hydra-right(src=url('/images/hydra.png'))
+                .hdx-transform-background
         .hdx-top-content-container.row.gx-0.px-0
             .hdx-top-content-item.col-lg-6
                 span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is the multi-headed liquidity protocol built for the
@@ -18,10 +22,11 @@ block content
             .hdx-top-content-item.hdx-top-content.col-lg-6
                 each aboutHdxInfo in about.aboutHydradx
                     +hdx-text-with-arrow(aboutHdxInfo)
-                .btn.btn__lg.hdx-about-hydradx-subscribe-btn Subscribe
+                .hdx-subscribe-btn-wrapper
+                    a.btn.btn__lg.hdx-about-hydradx-subscribe-btn(href=pageLink.subscribe.url target=pageLink.subscribe.target) Subscribe
         .hdx-universe-img-container
             img.hdx-universe-img(src=url('/images/universe.png'))
-    .hdx-transform-background
+
     .hdx-midle-content-container
         .hdx-about-hydradx-advantages-container.container.px-4
             .hdx-about-hydradx-advantages.row.gx-0
@@ -85,7 +90,7 @@ block content
             .hdx-video-and-podcast-header
                 .fz-40.p-color.ff-sans-hl.h-text-transform-uppercase video & podcast
                 .hdx-video-and-podcast-btn
-                    .btn.btn__md.h-text-transform-uppercase view more videos
+                    a.btn.btn__md.h-text-transform-uppercase(href=pageLink.viewMoreVideo.url target=pageLink.viewMoreVideo.target) view more videos
             .row.gx-0
                 .hdx-video-and-podcast-item.col-lg-4
                     iframe.hdx-video-wrapper(src='https://www.youtube.com/embed/SjD6EzghWlM')
@@ -99,6 +104,8 @@ block content
                     iframe.hdx-video-wrapper(src='https://www.youtube.com/embed/Iz1lfVyAKQ0')
                     a.hdx-video-and-podcast-title.fz-20.p-color.h-text-transform-uppercase.p-shadow(href='https://www.youtube.com/embed/Iz1lfVyAKQ0', target='_blank') Sub0 Online: Basilisk's Take on Existential Deposits in a Multi Asset World
                     .hdx-video-and-podcast-text What is an existential deposit, why is it important and how can it be addressed in a multi chain universe.
+            .hdx-video-and-podcast-btn-bottom
+                a.btn.btn__md.h-text-transform-uppercase(href=pageLink.viewMoreVideo.url target=pageLink.viewMoreVideo.target) view more videos
     .hdx-start-building-with-us-container
         h1.headline-2 Start buiding with us
         .hdx-start-building-with-us-background-container
@@ -107,7 +114,7 @@ block content
                 .col-xl-4.text-center.join-hydration
                     .hdx-start-building-with-us__join-hydration
                         img.weird-stroke(src=url('/images/weird_stroke.png'))
-                        a.btn.btn__lg(href='#') Join Hydration
+                        a.btn.btn__lg(href=pageLink.joinHydration.url target=pageLink.joinHydration.target) Join Hydration
                 .col-xl-4.community
                     +hdx-text-with-arrow('Hydration is an active community of builders mentored by our core developers. Fill out the application and join us!')
     .hdx-roadmap
@@ -131,5 +138,5 @@ block content
             .about-the-team.text-center
                 h1.p-color.p-shadow.text-uppercase=__('aboutTheTeam')
                 img(src=url('/images/galactic-council.svg') style="width: 205px")
-                - var gcUrl = '<a href="#">Galactic Council</a>'
+                - var gcUrl = '<a href="https://galacticcouncil.io/" target="_blank">Galactic Council</a>'
                 p.p-color !{__('aboutTheTeamIntro', gcUrl)}

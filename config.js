@@ -5,6 +5,7 @@ const header = require('./data/header.json');
 const about = require('./data/about.json');
 const tokenomics = require('./data/tokenomics.json');
 const democracy = require('./data/democracy.json');
+const pageLink = require('./data/pageLink.json');
 
 module.exports = {
     baseUrl: 'https://web3vietnam.github.io/',
@@ -22,5 +23,6 @@ module.exports = {
     header,
     about,
     tokenomics,
-    democracy
+    democracy,
+    pageLink
 };

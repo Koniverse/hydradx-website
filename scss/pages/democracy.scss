@@ -1,8 +1,6 @@
 .page-democracy {
   .header-background {
-    background-image: url("./images/democracy-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("./images/repeat-header-background.png") repeat;
     display: flow-root;
     height: 1162px;
     position: absolute;
@@ -11,6 +9,20 @@
     top: 56px;
     left: 0;
     min-width: $min-width;
+  }
+
+
+  .header-background-inner {
+    position: relative;
+    height: 100%;
+  }
+
+  .hdx-d-transform-background {
+    background: linear-gradient(169.35deg, rgba(13, 17, 128, 0) 5.56%, #0D1064 97.97%);
+    height: 2200px;
+    width: 100%;
+    position: absolute;
+    bottom: -220px;
   }
 
   .hdx-d-content-box {
@@ -121,7 +133,7 @@
   }
 
   .hdx-d-technical-commitee {
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   .hdx-d-technical-commitee-item:first-child {
@@ -144,6 +156,7 @@
     width: 412px;
     height: 268px;
     margin-top: -168px;
+    z-index: -1;
   }
 
   .hdx-d-bottom-content-container {
@@ -155,6 +168,9 @@
   .hdx-d-bottom-content-text {
     font-size: 32px;
     line-height: 52px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
   }
 
   .hdx-d-bottom-content-text-wrapper {
@@ -212,10 +228,15 @@
     }
   }
 
-  @media (max-width: breakpoint-min('lg')) {
+  @media (max-width: breakpoint-max('lg')) {
 
     .header-background {
       height: 1070px;
+    }
+
+    .hdx-d-transform-background {
+      bottom: 0;
+      height: 1000px;
     }
 
     .hdx-d-more-information-btn-wrapper {
