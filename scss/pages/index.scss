@@ -17,20 +17,27 @@
   }
 
   .header-background-inner-hydra-left, .header-background-inner-hydra-right {
-    max-width: 490px;
-    height: auto;
+    //max-width: 490px;
+    //height: auto;
     position: absolute;
   }
 
   .header-background-inner-hydra-left {
-    top: 0;
-    left: 0;
+    transform: rotate(35.19deg);
+    opacity: 0.2;
+    max-width: 1050.03px;
+    height: 1019.12px;
+    left: -663px;
+    top: -100px;
   }
 
   .header-background-inner-hydra-right {
-    transform: scaleX(-1);
-    right: 0;
-    top: 150px;
+    opacity: 0.2;
+    max-width: 851.01px;
+    height: 825.96px;
+    transform: matrix(-0.82, 0.58, 0.58, 0.82, 0, 0);
+    right: -517px;
+    top: 167px;
   }
   //.header-background-inner-wrapper {
   //  position: relative;
