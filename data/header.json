@@ -53,19 +53,27 @@
   "socialNetwork": [
     {
       "name": "twitter",
-      "color": "twitter-color"
+      "color": "twitter-color",
+      "url": "https://twitter.com/hydra_dx",
+      "target": "_blank"
     },
     {
       "name": "github",
-      "color": "github-color"
+      "color": "github-color",
+      "url": "https://github.com/galacticcouncil",
+      "target": "_blank"
     },
     {
       "name": "telegram",
-      "color": "telegram-color"
+      "color": "telegram-color",
+      "url": "https://t.me/hydradx",
+      "target": "_blank"
     },
     {
       "name": "discord",
-      "color": "discord-color"
+      "color": "discord-color",
+      "url": "https://discord.gg/enn3P9tDMe",
+      "target": "_blank"
     }
   ],
   "languages": {
