@@ -31,7 +31,7 @@
   },
   {
     "text": "Jobs",
-    "url": "#",
+    "url": "https://hydradx.io/jobs",
     "target": "_blank"
   },
   {
@@ -40,12 +40,12 @@
     "target": "_blank"
   },
   {
-    "text": "Claims",
-    "url": "https://docs.hydradx.io/claim",
+    "text": "Basilisk",
+    "url": "https://bsx.fi",
     "target": "_blank"
   },
   {
-    "text": "Blog",
+    "text": "Newsletter",
     "url": "https://hydradx.substack.com/",
     "target": "_blank"
   }
