@@ -21,8 +21,6 @@
   }
 
   .header-background-inner-hydra-left, .header-background-inner-hydra-right {
-    //max-width: 490px;
-    //height: auto;
     position: absolute;
   }
 
@@ -42,22 +40,6 @@
     right: 0;
     top: 167px;
   }
-  //.header-background-inner-wrapper {
-  //  position: relative;
-  //  background: url("./images/repeat-header-background.png") repeat;
-  //  height: 100%;
-  //  z-index: -1;
-  //}
-
-  //.header-background-inner-wrapper:before {
-  //  content: "";
-  //  position: absolute;
-  //  top: 0;
-  //  background: url("./images/hydra.png") no-repeat;
-  //  width: 470px;
-  //  height: 100%;
-  //  z-index: 1000;
-  //}
 
   .hdx-top-content-container {
     padding-top: 190px;
@@ -92,8 +74,8 @@
   }
 
   .hdx-universe-img {
-    margin: 59px 0;
-    width: 1330px;
+    padding: 59px 0;
+    max-width: 1330px;
   }
 
   .hdx-transform-background {
@@ -101,12 +83,11 @@
     height: 150px;
     width: 100%;
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
   }
 
   .hdx-midle-content-container {
     background: linear-gradient(180deg, #0D106E 8.29%, #0B0D56 76.59%);
-    margin-top: -40px;
     position: relative;
   }
 
@@ -218,13 +199,6 @@
     width: 240px;
     height: 240px;
   }
-
-
-  //.hdx-investor-and-backer-logo {
-  //  width: 156px;
-  //  height: 70px;
-  //  margin-left: 116px;
-  //}
 
   .hdx-the-teams-behind-content-text {
     margin: 23px 280px 0;
@@ -436,9 +410,6 @@
   }
 
   @media (max-width: 1489px) {
-    .hdx-universe-img {
-      width: 1130px;
-    }
 
     .hdx-chart-1 {
       width: 565px;
@@ -472,8 +443,6 @@
 
     .weird-stroke {
       width: 650px;
-      //left: -185px;
-      //top: 6px;
     }
 
     .hdx-top-content-item {
@@ -500,10 +469,6 @@
       padding-right: 0;
     }
 
-    .hdx-universe-img {
-      width: 955px;
-    }
-
     .hdx-about-hydradx-advantage {
       width: 100%;
       display: flex;
@@ -521,7 +486,6 @@
 
     .hdx-about-hydradx-advantage__title {
       text-align: center;
-      margin-top: 50px;
     }
 
     .hdx-about-hydradx-title {
@@ -586,15 +550,6 @@
       justify-content: center;
     }
 
-    //.hdx-investor-and-backer-logo {
-    //  margin-left: 180px;
-    //  margin-top: 20px;
-    //}
-
-    //.hdx-investor-and-backer-logo:first-child, .hdx-investor-and-backer-logo:nth-child(4) {
-    //  margin-left: 0;
-    //}
-
     .community {
       max-width: 600px;
       margin: 160px auto 0;
@@ -609,8 +564,6 @@
     .weird-stroke {
       width: 550px;
       margin-right: -70px;
-      //left: -106px;
-      //top: 16px;
     }
 
     .hdx-video-and-podcast-btn {
@@ -624,10 +577,6 @@
 
     .hdx-video-and-podcast-btn-bottom {
       margin-top: 80px;
-    }
-
-    .hdx-universe-img {
-      width: 720px;
     }
 
     .hdx-home-info-box-item:first-child, .hdx-home-info-box-item:last-child {
@@ -667,10 +616,6 @@
       margin-bottom: 70px;
     }
 
-    //.hdx-investor-and-backer-logo {
-    //  margin-left: 100px;
-    //}
-
     .members img {
       margin: 2em 3em;
     }
@@ -697,10 +642,6 @@
       top: -20px;
       width: 500px;
       margin-right: -105px;
-    }
-
-    .hdx-universe-img {
-      width: 545px;
     }
 
     .hdx-chart-1 {
@@ -733,11 +674,6 @@
     .hdx-roadmap .hdx-right-body-icon-container {
       display: none;
     }
-
-    //.hdx-investor-and-backer-logo {
-    //  margin-left: 60px;
-    //  width: 128px;
-    //}
 
     .hdx-video-and-podcast-header {
       flex-direction: column;
@@ -815,10 +751,6 @@
       margin-right: -100px;
     }
 
-    .hdx-universe-img {
-      width: 440px;
-    }
-
     .hdx-chart-1 {
       width: 400px;
     }
@@ -844,11 +776,6 @@
       height: 100px;
     }
 
-    //.hdx-investor-and-backer-logo {
-    //  width: 110px;
-    //  margin-left: 20px;
-    //}
-
     .hdx-info-graphic {
       height: 400px;
     }
@@ -864,10 +791,6 @@
 
     .join-hydration {
       margin-top: 0;
-    }
-
-    .hdx-universe-img {
-      width: 350px;
     }
 
     .hdx-chart-1 {
