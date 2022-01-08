@@ -32,14 +32,10 @@
   }
 
   .header-background-inner-hydra-right {
-    background-image: url("./images/hydra.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     opacity: 0.2;
-    width: 851.01px;
+    max-width: 400px;
     height: 825.96px;
-    transform: matrix(-0.82, 0.58, 0.58, 0.82, 0, 0);
-    right: -517px;
+    right: 0;
     top: 167px;
   }
   //.header-background-inner-wrapper {
