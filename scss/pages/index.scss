@@ -1,12 +1,16 @@
 .page-index {
+  .header-background-container {
+    position: relative;
+  }
+
   .header-background {
     background: url("./images/repeat-header-background.png") repeat;
     display: flow-root;
-    height: 1360px;
+    height: 100%;
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 56px;
+    top: 0;
     left: 0;
     min-width: $min-width;
   }
@@ -56,7 +60,7 @@
   //}
 
   .hdx-top-content-container {
-    margin-top: 64px;
+    padding-top: 190px;
   }
 
   .hdx-top-content-item:first-child {
@@ -97,7 +101,7 @@
     height: 150px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
   }
 
   .hdx-midle-content-container {
@@ -609,10 +613,6 @@
       //top: 16px;
     }
 
-    .hdx-transform-background {
-      bottom: 100px;
-    }
-
     .hdx-video-and-podcast-btn {
       display: none;
     }
@@ -807,7 +807,7 @@
     }
 
     .hdx-top-content-container {
-      margin-top: 15px;
+      padding-top: 140px;
     }
 
     .weird-stroke {
