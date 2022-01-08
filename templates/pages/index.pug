@@ -9,23 +9,24 @@ block append head
     meta(property='description' content=siteDescription)
 
 block content
-    .container.px-4
+    .header-background-container
         .header-background
             .header-background-inner
                 img.header-background-inner-hydra-left(src=url('/images/hydra.png'))
                 img.header-background-inner-hydra-right(src=url('/images/hydra-right.png'))
-                .hdx-transform-background
-        .hdx-top-content-container.row.gx-0.px-0
-            .hdx-top-content-item.col-lg-6
-                span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is the multi-headed liquidity protocol built for the
-                span.hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Polkadot ecosystem
-            .hdx-top-content-item.hdx-top-content.col-lg-6
-                each aboutHdxInfo in about.aboutHydradx
-                    +hdx-text-with-arrow(aboutHdxInfo)
-                .hdx-subscribe-btn-wrapper
-                    a.btn.btn__lg.hdx-about-hydradx-subscribe-btn(href=pageLink.subscribe.url target=pageLink.subscribe.target) Subscribe
-        .hdx-universe-img-container
-            img.hdx-universe-img(src=url('/images/universe.png'))
+            .hdx-transform-background
+        .container.px-4
+            .hdx-top-content-container.row.gx-0.px-0
+                .hdx-top-content-item.col-lg-6
+                    span.hdx-about-hydradx-content-title.fz-48.p-color.ff-sans-hl HydraDX is the multi-headed liquidity protocol built for the
+                    span.hdx-about-hydradx-content-title-button.fz-48.ff-sans-hl Polkadot ecosystem
+                .hdx-top-content-item.hdx-top-content.col-lg-6
+                    each aboutHdxInfo in about.aboutHydradx
+                        +hdx-text-with-arrow(aboutHdxInfo)
+                    .hdx-subscribe-btn-wrapper
+                        a.btn.btn__lg.hdx-about-hydradx-subscribe-btn(href=pageLink.subscribe.url target=pageLink.subscribe.target) Subscribe
+            .hdx-universe-img-container
+                img.hdx-universe-img(src=url('/images/universe.png'))
 
     .hdx-midle-content-container
         .hdx-about-hydradx-advantages-container.container.px-4
