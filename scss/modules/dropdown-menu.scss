@@ -25,6 +25,7 @@
     line-height: 30px;
     white-space: nowrap;
     text-transform: initial;
+    border-bottom: 2px solid transparent;
 
     @media (max-width: breakpoint-min('sm')) {
       white-space: normal;
@@ -43,6 +44,7 @@
     text-decoration: none;
     color: #000000;
     padding: 5px 63px 5px 21px;
+    border-bottom: none !important;
 
     &.children-active {
       .dropout-menu-item {
@@ -52,6 +54,7 @@
     }
 
     &:hover {
+      text-decoration: none;
       border-bottom: none !important;
     }
   }

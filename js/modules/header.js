@@ -34,11 +34,12 @@ const toggleMobileMenu = () => {
 }
 
 const toggleDesktopLanguageMenu = () => {
-    console.log('$languageSelectorBtn', $languageSelectorBtn)
     const {top, left} = $languageSelectorBtn.position();
     const height = $languageSelectorBtn.outerHeight(true);
 
     $languageMenu.fadeToggle(100);
+    $languageMenu.css('cssText', 'display: flex !important')
+    $languageMenu.css('flex-direction', 'column')
     //
     // $languageMenu.css({top: top + height, left: left - 47});
 }
@@ -51,7 +52,7 @@ const getLanguageMenu = () => {
     return $bkMenuLanguage.clone()
         .removeClass('about-menu')
         .addClass('header__menu about-language')
-        .css({'display': 'flex', 'flex-direction': 'column'})
+        .css('display', 'flex')
         .on('click', '.back', toggleMobileLanguageMenu);
 }
 
