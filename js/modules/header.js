@@ -51,7 +51,7 @@ const getLanguageMenu = () => {
     return $bkMenuLanguage.clone()
         .removeClass('about-menu')
         .addClass('header__menu about-language')
-        .css('display', 'block')
+        .css({'display': 'flex', 'flex-direction': 'column'})
         .on('click', '.back', toggleMobileLanguageMenu);
 }
 

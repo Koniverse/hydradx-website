@@ -1,10 +1,16 @@
 .page-404 {
-    .notfound {
-        margin: 50px auto;
-        text-align: center;
+    .notfound-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    img {
-        max-width: 200px;
+    .notfound {
+        text-align: center;
+
+    }
+
+    .notfound-text {
+        font-size: 28px;
     }
 }
