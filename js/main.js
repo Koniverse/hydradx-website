@@ -223,6 +223,26 @@ $(function () {
     //     }
     // }
 
+    window.onload = function () {
+        const contributeElHeight = $(document.getElementById('contributeEl')).outerHeight();
+        const footerElHeight = $(document.getElementById('footer')).outerHeight();
+        // const headerElHeight = $(document.querySelector('header')).outerHeight();
+        const errorBody = $(document.getElementById('errorBody'));
+        if (errorBody) {
+            errorBody.css('min-height', `calc(100vh - (${contributeElHeight}px + ${footerElHeight}px))`);
+            // errorBody.css('padding-top', `${headerElHeight}px`)
+        }
+    }
+
+    window.onresize = function () {
+        const contributeElHeight = $(document.getElementById('contributeEl')).outerHeight();
+        const footerElHeight = $(document.getElementById('footer')).outerHeight();
+        const errorBody = $(document.getElementById('errorBody'));
+        if (errorBody) {
+            errorBody.css('min-height', `calc(100vh - (${contributeElHeight}px + ${footerElHeight}px))`);
+        }
+    }
+
     const body = document.body;
     const scrollUp = "scroll-up";
     const scrollDown = "scroll-down";
